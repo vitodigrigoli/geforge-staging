@@ -35,4 +35,4 @@
 
 /* Hide bar in contact form
 --------------------------------------------------------------------------*/
-.cf-progressBar .show{opacity: 0;}
+.cf-progressBar {display: none !important;}

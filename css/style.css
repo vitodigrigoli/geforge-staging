@@ -175,7 +175,6 @@ h1,
 
 h2,
 .h2 {
-    font-size: 36px;
     font-size: 1.8rem;
     font-weight: 600;
     margin-top: 0;
@@ -207,17 +206,14 @@ p {
 }
 
 .tiny {
-    font-size: 16px;
     font-size: 0.8rem;
 }
 
 .small {
-    font-size: 18px;
     font-size: 0.9rem;
 }
 
 .medium {
-    font-size: 36px;
     font-size: 1.8rem;
 }
 
@@ -229,7 +225,6 @@ p {
 
 .grey .wrapper {
     background-color: var(--azzurro-chiaro);
-    background-color: #E7EEF457;
 }
 
 .light-blue .wrapper {
@@ -315,12 +310,9 @@ p {
     column-gap: 50px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
     .boxed .wrapper {
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding: 80px 40px;
     }
 
     .boxed.tiny .wrapper {
@@ -386,7 +378,7 @@ p {
     padding-bottom: 11.5rem;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
     .p-large {
         padding: 50px 20px;
     }
@@ -597,7 +589,6 @@ footer .wrapper{
     background-color: var(--arancio);
     color: #fff;
     padding: 10px 2rem;
-    -webkit-text-decoration: none;
     text-decoration: none;
     min-width: 9rem;
     display: inline-block;
@@ -646,6 +637,7 @@ a.bubbly-button {
     background-color: white;
     border-color: transparent;
     transform: scale(1.2);
+    color: var(--dark-text-color) !important;
 }
 
 
@@ -700,27 +692,27 @@ a.bubbly-button {
     }
 
     50% {
-        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+        background-position: 0 80%, 0 20%, 10% 40%, 20% 0, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
     }
 
     100% {
-        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
-        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+        background-position: 0 70%, 0 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
     }
 }
 
 @keyframes bottomBubbles {
     0% {
-        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0;
     }
 
     50% {
-        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+        background-position: 0 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0;
     }
 
     100% {
-        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
-        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+        background-position: 0 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
     }
 }
 
@@ -769,9 +761,8 @@ a.bubbly-button {
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
-    margin: auto;
     width: 100%;
-    margin-bottom: 40px;
+    margin: auto auto 40px;
 }
 
 .section-subtitle {
@@ -795,7 +786,7 @@ section .content-title {
 }
 
 
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
     .section-subtitle h2 {
         font-size: 8vw;
     }
@@ -872,7 +863,6 @@ section .content-title {
     .flame-title {
         position: relative;
         grid-area: 2 / 1 / 5 / 6;
-        grid-area: 1 / 1 / 5 / 6;
         margin-left: 6rem;
         display: flex;
         margin-right: 6rem;
@@ -947,7 +937,7 @@ section .content-title {
         grid-area: 4 / 3 / 5 / 6 !important;
     }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
     #introHome {
         height: 90vh;
     }
@@ -1051,9 +1041,8 @@ section .content-title {
     flex: none;
     width: 20%;
     text-align: center;
-    margin: auto;
     padding-top: 20px;
-    margin-bottom: -50vh;
+    margin: auto auto -50vh;
     position: relative;
 }
 
@@ -1146,22 +1135,22 @@ section .content-title {
     border-bottom: 30px solid black;
     aspect-ratio: 6/13.24;
     box-shadow:
-        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-        0 12.5px 10px rgba(0, 0, 0, 0.06),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 3px 2px rgba(0, 0, 0, 0.034),
+        0 7px 5px rgba(0, 0, 0, 0.048),
+        0 12px 10px rgba(0, 0, 0, 0.06),
+        0 22px 17px rgba(0, 0, 0, 0.072),
+        0 41px 33px rgba(0, 0, 0, 0.086),
         0 100px 80px rgba(0, 0, 0, 0.12);
     transition: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .rotated .smartphone {
     box-shadow:
-        2.8px 0 2.2px rgba(0, 0, 0, 0.034),
-        6.7px 0 5.3px rgba(0, 0, 0, 0.048),
-        12.5px 0 10px rgba(0, 0, 0, 0.06),
-        22.3px 0 17.9px rgba(0, 0, 0, 0.072),
-        41.8px 0 33.4px rgba(0, 0, 0, 0.086),
+        3px 0 2px rgba(0, 0, 0, 0.034),
+        7px 0 5px rgba(0, 0, 0, 0.048),
+        12px 0 10px rgba(0, 0, 0, 0.06),
+        22px 0 17px rgba(0, 0, 0, 0.072),
+        41px 0 33px rgba(0, 0, 0, 0.086),
         100px 0 80px rgba(0, 0, 0, 0.12)
 }
 
@@ -1171,9 +1160,6 @@ section .content-title {
     width: 100%;
     height: auto;
     background: black;
-    position: absolute;
-    left: 0;
-    top: 0;
     aspect-ratio: 6/13;
     border-radius: 20px;
     position: absolute;
@@ -1311,7 +1297,7 @@ div.sticky {
 }
 
 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
     .flow-overlay {
         width: 80%;
 
@@ -1352,8 +1338,7 @@ div.sticky {
     left: 0;
     width: 134%;
     height: 121%;
-    background: url(../assets/img/stories-bg.png);
-    background-repeat: no-repeat;
+    background: url(../assets/img/stories-bg.png) no-repeat;
     background-size: 100%;
     overflow: visible;
 }
@@ -1363,7 +1348,6 @@ div.sticky {
     background-repeat: no-repeat;
     position: relative;
     border-radius: 40px;
-    overflow: hidden;
     border-top: 13px solid black;
     border-left: 7px solid black;
     border-right: 7px solid black;
@@ -1449,7 +1433,6 @@ div.sticky {
 
 
 .storyThumb {
-    grid-column: 1/span 3;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -1573,7 +1556,7 @@ div.sticky {
 }
 
 
-@media only screen and (max-width: 768.69px) {
+@media only screen and (max-width: 768px) {
     
     .title {
         font-size: 2.5rem;
@@ -1587,7 +1570,6 @@ div.sticky {
     .slide {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(8, 1fr);
-        width: 85vw;
         width: 65vw;
     }
 
@@ -1700,11 +1682,10 @@ div.sticky {
 
 #servizi-fiamma {
     position: relative;
-    background: url(/assets/img/servizi-fiamma-mask.png), linear-gradient(180deg, rgba(254, 128, 5, 1) 0%, rgba(240, 113, 103, 1) 50%, rgba(240, 113, 103, 1) 100%);
+    background: url(../assets/img/servizi-fiamma-mask.png), linear-gradient(180deg, rgba(254, 128, 5, 1) 0%, rgba(240, 113, 103, 1) 50%, rgba(240, 113, 103, 1) 100%);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-top: 550px;
-    padding-top: 30vw;
+    padding: 30vw 5vw 0 5vw;
 
 }
 
@@ -1747,7 +1728,7 @@ div.sticky {
 }
 
 /* RESPONSIVE */
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
     .section-intro {
         display: block;
     }
@@ -1789,9 +1770,7 @@ div.sticky {
 
 
 .video-wrapper {
-    background: url('../assets/img/animated-flame-1.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url('../assets/img/animated-flame-1.svg') no-repeat center;
     padding: 38px;
     margin: -38px;
     position: relative;
@@ -1822,11 +1801,8 @@ div.sticky {
 #video-bg {
     width: 100%;
     border-radius: 10px;
-    background-size: auto;
     background-size: 100%;
-    border-radius: 10px;
     box-shadow: 0 0 .25rem rgba(0, 0, 0, .08), 0 .5rem .75rem rgba(0, 0, 0, .14);
-
     transition: all 1300ms;
     /*mix-blend-mode: screen;*/
 }
@@ -1991,7 +1967,7 @@ div.sticky {
     height: unset;
 }
 
-@media only screen and (max-width: 768.69px) {
+@media only screen and (max-width: 768px) {
     .vantaggi-grid{
         max-width: 63vw;
     }
@@ -2012,7 +1988,7 @@ div.sticky {
         max-width: 450px;
     }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
     .vantaggi-title h2 {
         font-size: 7vw;
     }
@@ -2113,15 +2089,10 @@ div.sticky {
 }
 
 .formazione-item {
-    -ms-flex-preferred-size: 0;
     flex-basis: 0;
-    -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px 10px;
 }
 
 .formazione-item .item-content {
@@ -2169,7 +2140,7 @@ div.sticky {
     background: white !important;
 }
 
-flickity-viewport {
+.flickity-viewport {
     height: fit-content;
 }
 
@@ -2359,21 +2330,21 @@ html.has-scroll-smooth {
 
 
       #scroll-scrollbar{
-        position:absolute;
-        right:0px;
-        top:0px;
-        width:10px;
-        height:100%;
-        z-index:1000;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 10px;
+        height: 100%;
+        z-index: 1000;
       }
       
       #scroll-scrollbar-thumb{
         position:absolute;
-        top:0px;
-        right:0px;
-        height:60px;
-        width:100%;
+        top: 0;
+        right: 0;
+        height: 60px;
+        width: 100%;
         background-color: #000;
-        cursor:grab;
+        cursor: grab;
       }
       
