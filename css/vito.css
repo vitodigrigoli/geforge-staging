@@ -9,10 +9,10 @@
 
 /* Scroll Micro-interaction
 --------------------------------------------------------------------------*/
-.scroll{opacity: 0; transition: 1s; color: var(--light-text-color); position: fixed; bottom: 3vh; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; z-index: 1000 }
+.scroll{opacity: 0; transition: 1s; color: var(--light-text-color); position: fixed; bottom: 3%; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; z-index: 1000 }
 .scroll--visible{opacity: 1}
 .scroll__pointer{width: 10px; height: 10px; border-radius: 50%; background-color: var(--light-text-color); animation: scroll_animation 2s cubic-bezier(0.63, 0.03, 0.24, 0.82) infinite}
-.scroll p{font-size: 18px; margin-bottom: 40px; font-weight: 600; animation: scroll_text_animation 2s cubic-bezier(0.63, 0.03, 0.24, 0.82) infinite; letter-spacing: 5px;}
+.scroll p{font-size: 18px; font-weight: 600; animation: scroll_text_animation 2s cubic-bezier(0.63, 0.03, 0.24, 0.82) infinite; letter-spacing: 5px;}
 
 @keyframes scroll_animation {
 	0% {transform: translateY(0) scale(0); opacity: 0}
@@ -29,7 +29,7 @@
 /* Hide scroll in specifics section
 --------------------------------------------------------------------------*/
 #servizi-fiamma, #formazione, #contatti { position: relative; z-index: 1010;}
-#rete{background-color: white; position: relative; z-index: 1010;}
+#rete{background-color: white; position: relative; z-index: 1011; height: fit-content;}
 .vantaggi-bg{z-index: 1020;}
 
 
@@ -38,8 +38,145 @@
 .cf-progressBar {display: none !important;}
 
 
-/* Smooth scroll
---------------------------------------------------------------------------*/
 
+/* Navbar
+--------------------------------------------------------------------------*/
+.navbar{transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); transform: translateX(-100%); position: fixed; top: 0; left: 0; background: var(--arancio); color: white; z-index: 2000; width: 100%; height: 100%; letter-spacing: 3px;}
+.navbar--visible{transform: translateX(0);}
+
+.navbar__menu{width: 100%; height: 93%; text-align: center; font-size: 4vw; font-weight: 600; text-transform: uppercase; font-family: 'Kanit', sans-serif; display: flex; align-items: center;justify-content: center; }
+.navbar__menu ul li{margin: 50px 0; opacity: 0;}
+.navbar--visible .navbar__menu ul li{ animation: menu_animation 1s  cubic-bezier(0.63, 0.03, 0.24, 0.82) forwards; cursor: pointer }
+
+
+
+
+@keyframes menu_animation {
+	from{opacity: 0; transform: translateX(-20%)}
+	to {opacity: 1; transform: translateX(0)}
+}
+
+.navbar__footer{padding: 0 30px; border-top: 1px solid white; height: 7%; display: flex; align-items: center; justify-content: space-between; }
+.navbar__footer__social ul{display: flex; }
+
+.navbar__footer__social a {text-decoration: none; color: white; margin-left: 30px; }
+.main-header{position: fixed; z-index: 3000}
+
+.navbar__menu{border: 1px solid green; position: relative; display: flex;justify-content: center; align-items: center; overflow: hidden;}
+.navbar__menu ul{position: relative; }
+.navbar__menu ul li{text-align: center;	list-style: none; margin: 3vw 0;}
+.navbar__menu ul li a{color: rgba(255,255,255,0.9); text-decoration: none; font-size: 6vw; padding: 5px 20px; display: inline-flex;	transition: 0.5s; font-family: 'Kanit', sans-serif}
+.navbar__menu ul:hover li a{color: rgba(255,255,255,0.1);}
+.navbar__menu ul li:hover a{color: var(--text-color);background: #fff;}
+
+.navbar__menu ul li a:before{
+	content:'';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	border: 1px solid yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5em;
+	color: rgba(0, 0, 0, 0.1);
+	z-index: -1;
+	opacity: 0;
+	letter-spacing: 500px;
+	transition: letter-spacing 0.5s;
+}
+
+.navbar__menu ul li a:hover:before{
+	content: attr(data-text);
+	opacity: 1;
+	letter-spacing: 10px;
+	z-index: -1;
+}
+
+.navigation{
+	font-family: 'Kanit', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.navigation ul{
+	position: relative;
+}
+
+.navigation ul li{
+	text-align: center;
+	list-style: none;
+	margin: 3vw 0;
+}
+
+.navigation ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 3em;
+	padding: 5px 20px;
+	display: inline-flex;
+	font-weight: 700;
+	transition: 0.5s;
+	te
+}
+
+.navigation ul:hover li a{
+	color: #0002;
+}
+
+.navigation ul li:hover a{
+	color: #000;
+	background: #fff;
+}
+
+.navigation ul li a:before{
+	content:'';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5em;
+	color: rgba(0, 0, 0, 0.1);
+	z-index: -1;
+	opacity: 0;
+	font-weight: 700;
+	letter-spacing: 500px;
+	transition: letter-spacing 0.5s, left 0.5s;
+	width: 100vw;
+	height: 100vh;
+}
+
+.navigation ul li a:hover:before{
+	content: attr(data-text);
+	opacity: 1;
+	letter-spacing: 10px;
+}
+
+.navigation ul li:nth-child(4n+1) a:before{
+	background: var(--arancio-chiaro);
+}
+.navigation ul li:nth-child(4n+2) a:before{
+	background: var(--viola-chiaro);
+}
+.navigation ul li:nth-child(4n+3) a:before{
+	background: var(--peach);
+}
+.navigation ul li:nth-child(4n+4) a:before{
+	background: var(--blu-chiaro)
+}
+
+
+
+
+/* Fix
+--------------------------------------------------------------------------*/
+html, body {overflow-x: hidden;}
+ul{list-style-type: none; margin: 0; padding: 0; }
 
 

@@ -16,7 +16,7 @@ window.addEventListener('scroll', function() {
 }, false);
 
 //add smooth scrolling when clicking any anchor link
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('.bubbly-button').forEach(anchor => {
 	anchor.addEventListener('click', function (e) {
 		e.preventDefault();
 		setTimeout( (e) => {
@@ -27,3 +27,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 	});
 });
+
+const logo = document.getElementsByClassName("logo")[0]
+const navbar = document.getElementsByClassName('navbar')[0]
+
+logo.addEventListener('click', () => {
+	navbar.classList.toggle('navbar--visible')
+})
