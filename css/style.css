@@ -497,38 +497,6 @@ p {
 */
 
 
-
-/**
- * LOGO
- */
-
-
-.top-bar{
-	position: absolute;
-	left:0; top:0;
-	width: 100%;
-	z-index: 1000000;
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(1, 1fr);
-	grid-column-gap: 0;
-	grid-row-gap: 0;
-}
-.logo{
-	grid-area: 1 / 2 / 6 / 10;
-	padding-left: 40px; padding-top: 40px;
-}
-.logo-img{
-	height: 6vh; width: auto;
-	transition: 300ms visibility;
-}
-
-@media only screen and (max-width: 1024px) {
-	.logo{
-		padding-left: 0;
-	}
-}
-
 /**
  * FOOTER
  */

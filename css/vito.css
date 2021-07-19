@@ -48,9 +48,6 @@
 .navbar__menu ul li{margin: 50px 0; opacity: 0;}
 .navbar--visible .navbar__menu ul li{ animation: menu_animation 1s  cubic-bezier(0.63, 0.03, 0.24, 0.82) forwards; cursor: pointer }
 
-
-
-
 @keyframes menu_animation {
 	from{opacity: 0; transform: translateX(-20%)}
 	to {opacity: 1; transform: translateX(0)}
@@ -120,7 +117,6 @@
 	display: inline-flex;
 	font-weight: 700;
 	transition: 0.5s;
-	te
 }
 
 .navigation ul:hover li a{
@@ -172,6 +168,16 @@
 }
 
 
+/* Logo
+--------------------------------------------------------------------------*/
+.logo{opacity: 1; transform: translateY(0); position: fixed;  bottom: 25px; right: 25px; width: 50px; height: fit-content; z-index: 3000; cursor: pointer; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82);}
+.logo__img{width: 100%; height: auto;}
+.logo--animate{transform: rotate(360deg)}
+.logo--hidden{ opacity: 0; transform: translateY(200%); transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); }
+
+@media screen and (min-width: 426px) {
+	.logo{ width: 80px; top: 50px; left: 50px;}
+}
 
 
 /* Fix
