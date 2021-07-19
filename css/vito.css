@@ -38,56 +38,19 @@
 .cf-progressBar {display: none !important;}
 
 
-
 /* Navbar
 --------------------------------------------------------------------------*/
-.navbar{transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); transform: translateX(-100%); position: fixed; top: 0; left: 0; background: var(--arancio); color: white; z-index: 2000; width: 100%; height: 100%; letter-spacing: 3px;}
+.navbar{transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); transform: translateX(-100%); position: fixed; top: 0; left: 0; background: var(--arancio); color: white; z-index: 2000; width: 100%; height: calc(100vh - calc(100vh - 100%)); letter-spacing: 3px;}
 .navbar--visible{transform: translateX(0); }
 .navbar--visible .navigation ul li {opacity: 1;}
 
-
-.navigation{
-	font-family: 'Kanit', sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	overflow: hidden;
-}
-
-.navigation ul{
-	position: relative;
-}
-
-.navigation ul li{
-	text-align: center;
-	list-style: none;
-	margin:  5vh 0;
-	opacity: 0;
-	transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82);
-
-}
-
-.navigation ul li a{
-	color: white;
-	text-decoration: none;
-	font-size: 3em;
-	padding: 5px 20px;
-	display: inline-flex;
-	font-weight: 700;
-	transition: 0.5s;
-}
-
-.navigation ul:hover li a{
-	color: #0002;
-}
-
-.navigation ul li:hover a{
-	color: #000;
-	background: #fff;
-}
-
-.navigation ul li a:before{
+.navigation {font-family: 'Kanit', sans-serif; display: flex; justify-content: center; align-items: center; height: 100%; overflow: hidden;}
+.navigation ul {position: relative;}
+.navigation ul li {	text-align: center;	list-style: none; margin:  5vh 0; opacity: 0; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82);}
+.navigation ul li a {color: white; text-decoration: none; font-size: 3em; padding: 5px 20px; display: inline-flex; font-weight: 700; transition: 0.5s;}
+.navigation ul:hover li a {color: #0002;}
+.navigation ul li:hover a {color: #000;background: #fff;}
+.navigation ul li a:before {
 	content:'';
 	position: absolute;
 	top: 50%;
@@ -107,37 +70,17 @@
 	height: 100vh;
 }
 
-.navigation ul li a:hover:before{
-	content: attr(data-text);
-	opacity: 1;
-	letter-spacing: 10px;
-}
+.navigation ul li a:hover:before{content: attr(data-text);opacity: 1;letter-spacing: 10px;}
 
-.navigation ul li:nth-child(4n+1) a:before{
-	background: var(--arancio-chiaro);
-}
-.navigation ul li:nth-child(4n+2) a:before{
-	background: var(--viola-chiaro);
-}
-.navigation ul li:nth-child(4n+3) a:before{
-	background: var(--peach);
-}
-.navigation ul li:nth-child(4n+4) a:before{
-	background: var(--blu-chiaro)
-}
+.navigation ul li:nth-child(4n+1) a:before {background: var(--arancio-chiaro);}
+.navigation ul li:nth-child(4n+2) a:before {background: var(--viola-chiaro);}
+.navigation ul li:nth-child(4n+3) a:before {background: var(--peach);}
+.navigation ul li:nth-child(4n+4) a:before {background: var(--blu-chiaro)}
 
-.navbar--visible .navigation ul li:nth-child(1) {
- transition-delay: 0.3s;
-}
-.navbar--visible .navigation ul li:nth-child(2) {
-	transition-delay: 0.5s;
-}
-.navbar--visible .navigation ul li:nth-child(3) {
-	transition-delay: 0.7s;
-}
-.navbar--visible .navigation ul li:nth-child(4){
-	transition-delay: 0.9s;
-}
+.navbar--visible .navigation ul li:nth-child(1) {transition-delay: 0.3s;}
+.navbar--visible .navigation ul li:nth-child(2) {transition-delay: 0.5s;}
+.navbar--visible .navigation ul li:nth-child(3) {transition-delay: 0.7s;}
+.navbar--visible .navigation ul li:nth-child(4) {transition-delay: 0.9s;}
 
 
 /* Logo
@@ -146,7 +89,7 @@
 .logo__img{width: 100%; height: auto;}
 
 .logo--animate{transform: translateY(0) rotate(360deg);  }
-.logo--hidden{ opacity: 0; transform: translateY(200%) rotate(0); }
+.logo--hidden{ opacity: 0; transform: translateY(200%) rotate(0); visibility: hidden }
 
 @media screen and (min-width: 426px) {
 	.logo{ width: 80px; top: 50px; left: 50px;}
