@@ -62,7 +62,7 @@
 .navigation ul li{
 	text-align: center;
 	list-style: none;
-	margin: 3vw 0;
+	margin:  5vh 0;
 	opacity: 0;
 	transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82);
 
