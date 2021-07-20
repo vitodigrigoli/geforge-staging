@@ -47,6 +47,20 @@ document.querySelectorAll('.bubbly-button').forEach(anchor => {
 	});
 });
 
+//add smooth scrolling when clicking any menu link
+document.querySelectorAll('.navigation ul li a').forEach(anchor => {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault();
+		navbar.classList.toggle('navbar--visible')
+		setTimeout( (e) => {
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		}, 900)
+
+	});
+});
+
 
 
 logo.addEventListener('click', () => {

@@ -95,6 +95,22 @@
 	.logo{ width: 80px; top: 50px; left: 50px;}
 }
 
+/* Digital College
+--------------------------------------------------------------------------*/
+#formazione{background: url("../assets/img/bg_digital_college.png");background-repeat: no-repeat;background-size: cover;; padding-top: 800px;}
+#rete{background: transparent}
+#contatti{background: linear-gradient(180deg, rgba(39, 67, 106, 1) 0%, rgba(19, 28, 37, 1) 100%)}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Fix
 --------------------------------------------------------------------------*/
