@@ -23,11 +23,9 @@ window.addEventListener('scroll', function() {
 	let st = window.pageYOffset || document.documentElement.scrollTop;
 	if (st > last_scroll_top){
 		// downscroll code
-		console.log("Scroll down")
 		logo.classList.add("logo--hidden")
 	} else {
 		// upscroll code
-		console.log("Scroll up")
 		logo.classList.remove("logo--hidden")
 	}
 	last_scroll_top = st <= 0 ? 0 : st; // For Mobile or negative scrolling

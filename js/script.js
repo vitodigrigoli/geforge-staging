@@ -53,6 +53,7 @@ const tl = gsap.timeline({
     start: "top top",
     end: smallMediaQuery.matches ? "+=8000" : "+=4000",
     toggleActions: "play pause play reset",
+    markers: true
     
 
   }
@@ -124,7 +125,6 @@ const tl = gsap.timeline({
       opacity: 0,
       duration: 1,
       stagger: 1,
-      onComplete: () => { console.log('fired') }
     }, "+=1")
 
   .to("#text-1",
@@ -159,7 +159,6 @@ const tl = gsap.timeline({
       opacity: 0,
       duration: 1,
       stagger: 1,
-      onComplete: () => { console.log('fired') }
     }, "+=1")
 
   .to("#text-2",
