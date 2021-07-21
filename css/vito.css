@@ -97,9 +97,8 @@
 
 /* Digital College
 --------------------------------------------------------------------------*/
-#formazione{background: url("../assets/img/bg_digital_college.png");background-repeat: no-repeat;background-size: cover;; padding-top: 800px;}
+#formazione{background-size: cover;	background: url("../assets/img/bg_digital_college.png") no-repeat top; padding-top: 800px; margin-top: -600px;}
 #rete{background: transparent}
-#contatti{background: linear-gradient(180deg, rgba(39, 67, 106, 1) 0%, rgba(19, 28, 37, 1) 100%)}
 
 
 
