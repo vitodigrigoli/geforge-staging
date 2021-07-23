@@ -40,7 +40,7 @@
 
 /* Navbar
 --------------------------------------------------------------------------*/
-.navbar{transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); transform: translateX(-100%); position: fixed; top: 0; left: 0; background: var(--arancio); color: white; z-index: 2000; width: 100%; height: calc(100vh - calc(100vh - 100%)); letter-spacing: 3px;}
+.navbar{transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); transform: translateX(-100%); position: fixed; top: 0; left: 0; background: var(--arancio); color: white; z-index: 2000; width: 100vw; height:100vh; overflow: hidden; letter-spacing: 3px;}
 .navbar--visible{transform: translateX(0); }
 .navbar--visible .navigation ul li {opacity: 1;}
 
@@ -97,8 +97,17 @@
 
 /* Digital College
 --------------------------------------------------------------------------*/
-#formazione{background-size: cover;	background: url("../assets/img/bg_digital_college.png") no-repeat top; padding-top: 800px; margin-top: -600px;}
+#formazione{background-size: contain;	background: url("../assets/img/bg_digital_college.png") no-repeat top; padding-top: 800px; margin-top: -600px;}
 #rete{background: transparent}
+
+@media screen and (max-width: 768px) {
+	#formazione{padding-top: 800px; margin-top: -500px;}
+}
+
+@media screen and (max-width: 426px) {
+	#formazione{background-size: cover; padding-top: 200px; padding-bottom: 0; margin-top: -200px;}
+	#formazione .wrapper{padding-bottom: 0;}
+}
 
 
 
@@ -115,5 +124,4 @@
 --------------------------------------------------------------------------*/
 html, body {overflow-x: hidden;}
 ul{list-style-type: none; margin: 0; padding: 0; }
-
 
