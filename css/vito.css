@@ -25,12 +25,16 @@
 	50% {opacity: 1}
 }
 
+@media screen and (max-width: 426px) {
+	.scroll p{display: none}
+}
 
 /* Hide scroll in specifics section
 --------------------------------------------------------------------------*/
-#servizi-fiamma, #formazione, #contatti { position: relative; z-index: 1010;}
+#servizi-fiamma, #contatti { position: relative; z-index: 1010;}
+#formazione{position: relative; z-index: 1011;}
 #rete{background-color: white; position: relative; z-index: 1011; height: fit-content;}
-.vantaggi-bg{z-index: 1020;}
+.vantaggi-bg{border: 1px solid red; position: relative; z-index: 1050; background: transparent;}
 
 
 /* Hide bar in contact form
@@ -40,7 +44,7 @@
 
 /* Navbar
 --------------------------------------------------------------------------*/
-.navbar{transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); transform: translateX(-100%); position: fixed; top: 0; left: 0; background: var(--arancio); color: white; z-index: 2000; width: 100vw; height:100vh; overflow: hidden; letter-spacing: 3px;}
+.navbar{transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); transform: translateX(-100%); position: fixed; top: 0; left: 0; background: black; color: white; z-index: 2000; width: 100vw; height:100vh; overflow: hidden; letter-spacing: 3px;}
 .navbar--visible{transform: translateX(0); }
 .navbar--visible .navigation ul li {opacity: 1;}
 
@@ -48,7 +52,7 @@
 .navigation ul {position: relative;}
 .navigation ul li {	text-align: center;	list-style: none; margin:  5vh 0; opacity: 0; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82);}
 .navigation ul li a {color: white; text-decoration: none; font-size: 3em; padding: 5px 20px; display: inline-flex; font-weight: 700; transition: 0.5s;}
-.navigation ul:hover li a {color: #0002;}
+.navigation ul:hover li a {color: #111;}
 .navigation ul li:hover a {color: #000;background: #fff;}
 .navigation ul li a:before {
 	content:'';
@@ -85,31 +89,34 @@
 
 /* Logo
 --------------------------------------------------------------------------*/
-.logo{opacity: 1; transform: translateY(0) rotate(0); position: fixed;  bottom: 25px; right: 25px; width: 50px; height: fit-content; z-index: 3000; cursor: pointer; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82);}
-.logo__img{width: 100%; height: auto;}
+
+.logo{ mix-blend-mode: difference; width: 60px;border: 1px solid red; opacity: 1; transform: translateY(0) rotate(0); position: fixed;  bottom: 25px; right: 25px;  height: fit-content; z-index: 3000; cursor: pointer; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); background: inherit}
 
 .logo--animate{transform: translateY(0) rotate(360deg);  }
 .logo--hidden{ opacity: 0; transform: translateY(200%) rotate(0); visibility: hidden }
 
 @media screen and (min-width: 426px) {
-	.logo{ width: 80px; top: 50px; left: 50px;}
+	.logo{ width: 100px; top: 50px; left: 50px;}
 }
+
+#introHome{background: white;}
+.pin-spacer{background: white;}
 
 /* Digital College
 --------------------------------------------------------------------------*/
-#formazione{background-size: contain;	background: url("../assets/img/bg_digital_college.png") no-repeat top; padding-top: 800px; margin-top: -600px;}
-#rete{background: transparent}
+#formazione{background-size: contain;	background: url("../assets/img/bg_digital_college.jpg") no-repeat top; padding-top: 800px;}
 
 @media screen and (max-width: 768px) {
 	#formazione{padding-top: 800px; margin-top: -500px;}
 }
 
 @media screen and (max-width: 426px) {
-	#formazione{background-size: cover; padding-top: 200px; padding-bottom: 0; margin-top: -200px;}
+	#formazione{background-size: cover; padding-top: 200px; padding-bottom: 0;}
 	#formazione .wrapper{padding-bottom: 0;}
 }
 
-
+/* Video scroller
+--------------------------------------------------------------------------*/
 
 
 
@@ -124,4 +131,5 @@
 --------------------------------------------------------------------------*/
 html, body {overflow-x: hidden;}
 ul{list-style-type: none; margin: 0; padding: 0; }
+img{width:100%; height: auto;}
 
