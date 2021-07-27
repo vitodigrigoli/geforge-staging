@@ -107,7 +107,7 @@
 #formazione{background-size: contain;	background: url("../assets/img/bg_digital_college.jpg") no-repeat top; padding-top: 800px;}
 
 @media screen and (max-width: 768px) {
-	#formazione{padding-top: 800px; margin-top: -500px;}
+	#formazione{padding-top: 800px;}
 }
 
 @media screen and (max-width: 426px) {
