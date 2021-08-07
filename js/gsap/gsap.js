@@ -21,7 +21,7 @@ const bgDark = gsap.to("body", {
 });
 
 
-
+console.log("Ciaooo")
 
 let tl1 = gsap
   .timeline({

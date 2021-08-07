@@ -51,14 +51,16 @@ const tl = gsap.timeline({
     scrub: 1,
     maxScroll: 300,
     start: "top top",
-    end: smallMediaQuery.matches ? "+=8000" : "+=4000",
+    end: smallMediaQuery.matches ? "+=2000" : "+=1000",
     toggleActions: "play pause play reset",
-  }
+    markers: true
+  },
 });
 
 
   // Mostro il titolo
-  tl.from(".title", {
+  tl
+    .from(".title", {
     opacity: 0,
     duration: 1,
     onStart: () => switchVideo("video-0", "video-0"),
@@ -417,13 +419,4 @@ this.scrollSlideIndex = closestSlideIndex;
 	el.lightbox = new IframeLightbox(el);
 });
 
-/* SMOTH SCROLL */
-
-
-// const scroller = new LocomotiveScroll({
-//   el: document.querySelector("body"),
-//   smooth: true,
-//   multiplier: 0.5,
-//   lerp: 0.5
-// });
 
