@@ -106,16 +106,16 @@
 
 /* Digital College
 --------------------------------------------------------------------------*/
-#formazione{background-size: contain;	background: url("../assets/img/bg_digital_college.jpg") no-repeat top; padding-top: 800px;}
 
-@media screen and (max-width: 768px) {
-	#formazione{padding-top: 800px;}
+
+#formazione {
+	position: relative;
+	background: url(../assets/img/dg-mask-2.png), linear-gradient(180deg, rgba(39, 67, 106, 1) 0%, rgba(19, 28, 37, 1) 100%);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 50vw 3vw 0 0;
 }
 
-@media screen and (max-width: 426px) {
-	#formazione{background-size: cover; padding-top: 200px; padding-bottom: 0;}
-	#formazione .wrapper{padding-bottom: 0;}
-}
 
 /* Video scroller
 --------------------------------------------------------------------------*/
