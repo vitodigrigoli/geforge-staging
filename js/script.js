@@ -51,7 +51,7 @@ const tl = gsap.timeline({
     scrub: 1,
     maxScroll: 300,
     start: "top top",
-    end: smallMediaQuery.matches ? "+=2000" : "+=1000",
+    end: smallMediaQuery.matches ? "+=3000" : "+=1500",
     toggleActions: "play pause play reset",
     markers: true
   },
@@ -84,7 +84,7 @@ const tl = gsap.timeline({
     }, "+=1")
 
   // Cambio Sfondo => Scuro
-  .to("body",
+  .to(".pin-spacer",
   {
     css: { background: '#131C25', color: 'white' },
     duration: 1,
@@ -134,7 +134,7 @@ const tl = gsap.timeline({
     }, "+=5")
 
   // Cambio Sfondo => Chiaro
-  .to("body",
+  .to(".pin-spacer",
     {
       css: { background: '#ffffff', color: '#131C25' },
       duration: 1,
