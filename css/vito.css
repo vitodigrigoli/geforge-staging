@@ -34,7 +34,6 @@
 #servizi-fiamma, #contatti { position: relative; z-index: 1010;}
 #formazione{position: relative; z-index: 1011;}
 #rete{background-color: white; position: relative; z-index: 1011; height: fit-content;}
-.vantaggi-bg{border: 1px solid red; position: relative; z-index: 1050; background: transparent;}
 
 
 /* Hide bar in contact form
