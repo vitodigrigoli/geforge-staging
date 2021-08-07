@@ -16,7 +16,7 @@ window.addEventListener('scroll', function() {
 
 	timer = setTimeout(function() {
 		scroll_animation.classList.add("scroll--visible")
-	}, 3000);
+	}, 2000);
 
 
  // display logo at upscroll
