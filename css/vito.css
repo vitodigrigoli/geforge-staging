@@ -50,8 +50,8 @@
 
 .navigation {font-family: 'Kanit', sans-serif; display: flex; justify-content: center; align-items: center; height: 100%; overflow: hidden;}
 .navigation ul {position: relative;}
-.navigation ul li {	border: 1px solid red; text-align: center;	list-style: none; opacity: 0; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82);}
-.navigation ul li a {color: white; border: 1px solid red; width: 100%; text-align: center !important; text-decoration: none; font-size: 3em; padding: 30px; display: inline-block; font-weight: 700; transition: 0.5s;}
+.navigation ul li {	text-align: center;	list-style: none; opacity: 0; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82);}
+.navigation ul li a {color: white; width: 100%; text-align: center !important; text-decoration: none; font-size: 3em; padding: 30px; display: inline-block; font-weight: 700; transition: 0.5s;}
 .navigation ul:hover li a {color: #0002;}
 .navigation ul li:hover a {color: #000;background: #fff;}
 .navigation ul li a:before {
@@ -92,7 +92,7 @@
 /* Logo
 --------------------------------------------------------------------------*/
 
-.logo{ mix-blend-mode: difference; width: 60px;border: 1px solid red; opacity: 1; transform: translateY(0) rotate(0); position: fixed;  bottom: 25px; right: 25px;  height: fit-content; z-index: 3000; cursor: pointer; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); background: inherit}
+.logo{ mix-blend-mode: difference; width: 60px; opacity: 1; transform: translateY(0) rotate(0); position: fixed;  bottom: 25px; right: 25px;  height: fit-content; z-index: 3000; cursor: pointer; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); background: inherit}
 
 .logo--animate{transform: translateY(0) rotate(360deg);  }
 .logo--hidden{ opacity: 0; transform: translateY(200%) rotate(0); visibility: hidden }
