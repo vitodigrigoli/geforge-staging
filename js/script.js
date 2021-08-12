@@ -53,7 +53,6 @@ const tl = gsap.timeline({
     start: "top top",
     end: smallMediaQuery.matches ? "+=3000" : "+=1500",
     toggleActions: "play pause play reset",
-    markers: true
   },
 });
 

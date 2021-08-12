@@ -109,7 +109,7 @@
 
 #formazione {
 	position: relative;
-	background: url(../assets/img/dg-mask-2.png), linear-gradient(180deg, rgba(39, 67, 106, 1) 0%, rgba(19, 28, 37, 1) 100%);
+	background: url('https://res.cloudinary.com/damqzwfm5/image/upload/f_auto,q_auto:good/v1628765526/geforge/dg-mask-2_mwu7mm.png'), linear-gradient(180deg, rgba(39, 67, 106, 1) 0%, rgba(19, 28, 37, 1) 100%);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	padding: 50vw 3vw 0 0;
