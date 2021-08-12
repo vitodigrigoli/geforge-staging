@@ -137,4 +137,5 @@
 html, body {overflow-x: hidden;}
 ul{list-style-type: none; margin: 0; padding: 0; }
 img{width:100%; height: auto;}
+#introHome-wrapper > div > div.introHome-bg.intro-right.intro-bg{z-index: 10}
 
