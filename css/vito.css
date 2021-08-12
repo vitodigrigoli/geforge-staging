@@ -116,9 +116,12 @@
 }
 
 
-/* Video scroller
+/* Rete
 --------------------------------------------------------------------------*/
-
+.vantaggi-1 .box::after{background-image: url("https://res.cloudinary.com/damqzwfm5/image/upload/f_auto,q_auto:good/v1628769475/geforge/images/rete-formazione_swcenv.png")}
+.vantaggi-2 .box::after{background-image: url("https://res.cloudinary.com/damqzwfm5/image/upload/f_auto,q_auto:good/v1628769476/geforge/images/rete-scambio_ryzlz8.png")}
+.vantaggi-3 .box::after{background-image: url("https://res.cloudinary.com/damqzwfm5/image/upload/f_auto,q_auto:good/v1628769476/geforge/images/rete-squadra_gipntu.png")}
+.vantaggi-4 .box::after{background-image: url("https://res.cloudinary.com/damqzwfm5/image/upload/f_auto,q_auto:good/v1628769476/geforge/images/rete-futuro_jrurif.png")}
 
 
 
