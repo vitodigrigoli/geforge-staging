@@ -1660,6 +1660,7 @@ div.sticky {
 #servizi-fiamma h3 {
 	position: absolute;
 	top: 20px;
+	left:0;
 	width: 100%;
 	text-align: center;
 }
@@ -1740,8 +1741,8 @@ div.sticky {
 .video-wrapper {
 	background: url('../assets/img/animated-flame-1.svg') no-repeat center;
 	padding: 38px;
-	margin: -38px;
 	position: relative;
+	margin: 150px -38px -38px;
 
 }
 
