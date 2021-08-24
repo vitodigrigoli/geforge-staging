@@ -51,7 +51,7 @@ const tl = gsap.timeline({
     scrub: 1,
     maxScroll: 300,
     start: "top top",
-    end: smallMediaQuery.matches ? "+=5000" : "+=1500",
+    end: smallMediaQuery.matches ? "+=3000" : "+=3000",
     toggleActions: "play pause play reset",
   },
 });
