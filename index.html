@@ -26,11 +26,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#131C25" />
-	<meta property="og:title"              content="GeForGe" />
-	<meta property="og:description"        content="Siamo una community di giovani professionisti che condividono idee, esperienze, formazione, capacità e voglia di mettersi in gioco." />
-	<meta property="og:image"              content="https://res.cloudinary.com/damqzwfm5/image/upload/v1634030478/geforge/images/Screenshot_1_c90zlq.png" />
+
+	<!-- HTML Meta Tags -->
+	<title>GeForGe - Lasciati forgiare da noi</title>
+	<meta name="description" content="Siamo una community di giovani professionisti che condividono idee, esperienze, formazione, capacità e voglia di mettersi in gioco.">
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://geforge.it/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="GeForGe - Lasciati forgiare da noi">
+	<meta property="og:description" content="Siamo una community di giovani professionisti che condividono idee, esperienze, formazione, capacità e voglia di mettersi in gioco.">
+	<meta property="og:image" content="https://res.cloudinary.com/damqzwfm5/image/upload/c_crop,g_west,h_630,w_1200/v1634030478/geforge/images/Screenshot_1_c90zlq.png">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="geforge.it">
+	<meta property="twitter:url" content="https://geforge.it/">
+	<meta name="twitter:title" content="GeForGe - Lasciati forgiare da noi">
+	<meta name="twitter:description" content="Siamo una community di giovani professionisti che condividono idee, esperienze, formazione, capacità e voglia di mettersi in gioco.">
+	<meta name="twitter:image" content="https://res.cloudinary.com/damqzwfm5/image/upload/c_crop,g_west,h_630,w_1200/v1634030478/geforge/images/Screenshot_1_c90zlq.png">
+
+	<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
 	<link rel="icon" sizes="192x192" href="assets/img/logo-scuro-1.png">
-	<title>GeForGe - Lasciati forgiare da noi.</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
 	<!-- Google Tag Manager -->
@@ -69,8 +87,9 @@
 	<link href="css/modal.min.css" rel="stylesheet">
 
 	<link href="css/conversational.min.css" rel="stylesheet">
-	<link href="css/flickity.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="css/vito.css">
+
 
 	<script type="text/javascript">
 			var _iub = _iub || [];
@@ -907,7 +926,7 @@
 					<textarea type="text" name="message" cf-questions="Scrivi la tua richiesta"></textarea>
 					<!--Submit-->
 					<fieldset style="display: none;">
-						<label for="thats-all">Grazie per il tuo tempo {name}, questo è tutto. Vuoi inviare la tua richiesta?</label>
+						<label for="thats-all">Grazie per il tuo tempo {name}, questo è tutto. Secondo l'informativa sulla privacy, acconsenti al trattamento dei dati personali?</label>
 						<select cf-questions="Vuoi inviare la tua richiesta?" name="text-send" id="submit-form" class="form-control">
 							<option value="Invia adesso!">Sì, invia adesso.</option>
 						</select>
@@ -918,6 +937,14 @@
 			</div>
 		</div>
 	</footer>
+	<div class="subfooter">
+		<div class="subfooter__policy">
+			<span><a href="https://www.iubenda.com/privacy-policy/42165774" target="_blank">Privacy</a> - <a href="https://www.iubenda.com/privacy-policy/42165774/cookie-policy" target="_blank">Cookie</a></span>
+		</div>
+		<div class="subfooter__text">
+			<span>GeForGe - Genius for Genius</span>
+		</div>
+	</div>
 
 
 
@@ -931,8 +958,8 @@
 <script src="js/gsap/gsap.min.js"></script>
 <script src="js/gsap/ScrollTrigger.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+<script	src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="js/flickity-sync.min.js"></script>
 
 <!-- Components -->

@@ -87,6 +87,9 @@
 .navbar--visible .navigation ul li:nth-child(4) {transition-delay: 0.6s;}
 .navbar--visible .navigation ul li:nth-child(5) {transition-delay: 0.7s;}
 
+@media screen and (max-width: 426px) {
+	.navigation ul li a{ font-size: 2em; padding: 15px;}
+}
 
 /* Logo
 --------------------------------------------------------------------------*/
@@ -131,6 +134,21 @@
 }
 
 
+/* Subfooter
+--------------------------------------------------------------------------*/
+.subfooter{display: flex; justify-content: space-between; padding: 30px; background-color: var(--blu-scuro); color: white; font-size: 18px; letter-spacing: 2px; position: relative; z-index: 3100;}
+.subfooter__policy{}
+.subfooter__policy a{ text-decoration: none; color: white; }
+.subfooter__text{}
+
+@media screen and (max-width: 426px) {
+	.subfooter{ flex-wrap: wrap; padding: 15px; }
+	.subfooter__policy{width: 100%;  margin-bottom: 15px;}
+	.subfooter__text{width: 100%;}
+	.subfooter__policy,
+	.subfooter__text span{ text-align: center; display: block}
+}
+
 
 
 
@@ -143,3 +161,4 @@ ul{list-style-type: none; margin: 0; padding: 0; }
 img{width:100%; height: auto;}
 #introHome-wrapper > div > div.introHome-bg.intro-right.intro-bg{z-index: 10}
 
+#conversational-form > div > cf-input > div > cf-input-button{ transform: rotate(90deg);}
