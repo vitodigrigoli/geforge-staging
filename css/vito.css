@@ -50,7 +50,7 @@
 .navigation {font-family: 'Kanit', sans-serif; display: flex; justify-content: center; align-items: center; height: 100%; overflow: hidden;}
 .navigation ul {position: relative;}
 .navigation ul li {	text-align: center;	list-style: none; opacity: 0; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82);}
-.navigation ul li a {color: white; width: 100%; text-align: center !important; text-decoration: none; font-size: 3em; padding: 30px; display: inline-block; font-weight: 700; transition: 0.5s;}
+.navigation ul li a {color: white; width: 100%; text-align: center !important; text-decoration: none; font-size: 2em; padding: 30px; display: inline-block; font-weight: 700; transition: 0.5s;}
 .navigation ul:hover li a {color: #0002;}
 .navigation ul li:hover a {color: #000;background: #fff;}
 .navigation ul li a:before {
@@ -94,14 +94,10 @@
 /* Logo
 --------------------------------------------------------------------------*/
 
-.logo{ mix-blend-mode: difference; width: 60px; opacity: 1; transform: translateY(0) rotate(0); position: fixed;  bottom: 25px; right: 25px;  height: fit-content; z-index: 3000; cursor: pointer; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); background: inherit}
+.logo{ mix-blend-mode: difference; width: 60px; opacity: 1; transform: translateY(0) rotate(0); position: fixed;  bottom: 25px; left: 25px; height: fit-content; z-index: 3000; cursor: pointer; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82);}
 
 .logo--animate{transform: translateY(0) rotate(360deg);  }
 .logo--hidden{ opacity: 0; transform: translateY(200%) rotate(0); visibility: hidden }
-
-@media screen and (min-width: 426px) {
-	.logo{ width: 100px; top: 50px; left: 50px;}
-}
 
 #introHome{background: white;}
 .pin-spacer{background: white;}
@@ -148,6 +144,215 @@
 	.subfooter__policy,
 	.subfooter__text span{ text-align: center; display: block}
 }
+
+
+
+
+/* Hero
+--------------------------------------------------------------------------*/
+.hero{width: 100vw; height: 100vh;  position: relative; display: flex; align-items: center;}
+.hero__media{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.hero__media video{ object-fit: cover; width: 100%; height: 100%;}
+
+.hero__text{ padding-left: 40px; position: relative; width: 30%; color: white}
+
+.hero__text h1{ font-size: 16px;text-transform: uppercase; color: var(--arancio); margin-bottom: 10px;}
+
+
+@media (max-width: 1024px) {
+	.hero__text{width: 50%;}
+}
+
+@media (max-width: 769px) {
+	.hero__text{width: calc(100% - 40px);}
+}
+
+
+
+
+
+
+
+
+
+
+/* Animation
+--------------------------------------------------------------------------*/
+.wrapper_animation{position: relative;}
+.reveal{ width: 0; height: 100%; background-color: #e91e63; position: absolute; top: 0; left: 0; animation: text-reveal 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards; z-index: 11; }
+.fadeIn{opacity: 0; animation: fadeIn 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards; position: relative; z-index: 10; }
+
+.delay-1{animation-delay: 0.5s;}
+.delay-2{animation-delay: 1.5s;}
+.delay-3{animation-delay: 2s;}
+.delay-4{animation-delay: 3s;}
+.delay-5{animation-delay: 4s;}
+
+.bg-1{background-color: var(--arancio);}
+.bg-2{background-color: var(--arancio-chiaro);}
+.bg-1{background-color: var(--arancio);}
+
+@keyframes text-reveal {
+	0% { width: 0%;left: 0; }
+	50% { width: 100%;left: 0; }
+	100% { width: 0;left: 100%; }
+}
+
+@keyframes fadeIn {
+	to{opacity: 1;}
+}
+
+
+
+.hero__ext {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid yellow;
+	z-index: 10;
+	text-align: center;
+  }
+
+  .hero__tet  .box {
+	position: relative;
+	border: 1px solid red;
+	text-align: center;
+  }
+  .hero__tex  .box .title {
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 50px;
+  }
+  .hero__txt  .box .title .block {
+	width: 0%;
+	height: inherit;
+	background: #ffb510;
+	position: absolute;
+	animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+	display: flex;
+  }
+  .hero__ext  .box .title h1 {
+	color: #fff;
+	font-size: 32px;
+	-webkit-animation: mainFadeIn 2s forwards;
+	-o-animation: mainFadeIn 2s forwards;
+	animation: mainFadeIn 2s forwards;
+	animation-delay: 1.6s;
+	opacity: 0;
+	display: flex;
+	align-items: baseline;
+	position: relative;
+  }
+
+  .hero__txt  .box .role {
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 30px;
+  }
+  .hero__txt  .box .role .block {
+	width: 0%;
+	height: inherit;
+	background: #e91e63;
+	position: absolute;
+	animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+	animation-delay: 2s;
+	display: flex;
+  }
+  .hero__txt .box .role p {
+	animation: secFadeIn 2s forwards;
+	animation-delay: 3.2s;
+	opacity: 0;
+	font-weight: 400;
+	color: #ffffff;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+  }
+  
+  @keyframes mainBlock {
+	0% {
+	  width: 0%;
+	  left: 0;
+	}
+	50% {
+	  width: 100%;
+	  left: 0;
+	}
+	100% {
+	  width: 0;
+	  left: 100%;
+	}
+  }
+  @keyframes secBlock {
+	0% {
+	  width: 0%;
+	  left: 0;
+	}
+	50% {
+	  width: 100%;
+	  left: 0;
+	}
+	100% {
+	  width: 0;
+	  left: 100%;
+	}
+  }
+  @keyframes mainFadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes secFadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 0.5;
+	}
+  }
+  
+  @keyframes top {
+	0% {
+	  opacity: 0;
+	  bottom: -80px;
+	}
+	100% {
+	  opacity: 1;
+	  bottom: 0px;
+	}
+  }
+  @keyframes icon {
+	0% {
+	  opacity: 0;
+	  transform: scale(0);
+	}
+	50% {
+	  opacity: 1;
+	  transform: scale(1.3) rotate(-2deg);
+	}
+	100% {
+	  opacity: 1;
+	  bottom: 0px;
+	}
+  }
+
+
+
+
+
+
+
+
 
 
 
