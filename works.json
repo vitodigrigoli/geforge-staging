@@ -34,6 +34,28 @@
 		"year": "2021",
 		"path_img": "./assets/img/lavori/work1.png",
 		"link": "https://www.advicenology.it"
+    },
+	{
+        "name": "Black Earth Fashion",
+        "category": "branding",
+		"year": "2021",
+		"path_img": "./assets/img/lavori/work1.png",
+		"link": "https://www.advicenology.it"
+
+    },
+	{
+        "name": "Black Earth Fashion",
+        "category": "filmaking",
+		"year": "2021",
+		"path_img": "./assets/img/lavori/work1.png",
+		"link": "https://www.advicenology.it"
+    },
+	{
+        "name": "Black Earth Fashion",
+        "category": "filmaking",
+		"year": "2021",
+		"path_img": "./assets/img/lavori/work1.png",
+		"link": "https://www.advicenology.it"
     }
 
 

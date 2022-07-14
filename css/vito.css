@@ -192,7 +192,7 @@
 
 .grid__content{border:1px solid green; width: 55%; display: flex; flex-direction: column;}
 
-.grid__content__item{width: 100%; aspect-ratio: 16 / 9; border: 1px solid red; position: relative; overflow: hidden; opacity: 1; transition: 0.4s; max-height: 1000px;}
+.grid__content__item{width: 100%; aspect-ratio: 16 / 9; border: 1px solid red; position: relative; overflow: hidden; opacity: 1; transition: 0.4s; max-height: 1000px;  margin-bottom: 1rem}
 .grid__content__item::before{content: '';  width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: linear-gradient(90deg, var(--rosso-scuro), transparent);  z-index: 6;;}
 .grid__content__item img{position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;  z-index: 5; transition: 0.4s;}
 .grid__content__item:hover img{transform: scale(1.2);}
