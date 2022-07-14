@@ -229,14 +229,12 @@ function appendData(data) {
 
 	let link = document.createElement("a")
 	link.setAttribute('href', data[i].link)
-	link.setAttribute('target', '_black')
+	link.setAttribute('target', '_blanck')
 
-    let div = document.createElement("div");
-	div.className = 'grid__content__item' + ' ' + data[i].category
+	link.className = 'grid__content__item' + ' ' + data[i].category
 
-	div.setAttribute('data-scroll', '')
-	div.setAttribute('data-scroll-delay', '0.2')
-
+	link.setAttribute('data-scroll', '')
+	link.setAttribute('data-scroll-delay', '0.2')
 
 
 	let text = document.createElement("div");
@@ -259,10 +257,8 @@ function appendData(data) {
 	text.appendChild(title)
 	text.appendChild(categ)
 
-	div.appendChild(text)
-	div.appendChild(image)
-
-	link.appendChild(div)
+	link.appendChild(text)
+	link.appendChild(image)
 
     mainContainer.appendChild(link);
   }

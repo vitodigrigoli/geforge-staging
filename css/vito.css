@@ -174,7 +174,7 @@
 
 /* Portfolio
 --------------------------------------------------------------------------*/
-.portfolio{background-color: white);}
+.portfolio{background-color: var(--grigio-panna);}
 
 .grid{display: flex; align-items: flex-start; justify-content: space-between; border: 1px solid red; max-width: 2000px; margin: 0 auto; padding: 2rem 10%; }
 
@@ -192,11 +192,11 @@
 
 .grid__content{border:1px solid green; width: 55%; display: flex; flex-direction: column;}
 
-.grid__content__item{width: 100%; aspect-ratio: 16 / 9; border: 1px solid red; position: relative; overflow: hidden; opacity: 1; transition: 0.4s; max-height: 1000px;  margin-bottom: 1rem}
+.grid__content__item{width: 100%; aspect-ratio: 16 / 9; border: 1px solid red; position: relative; overflow: hidden; opacity: 1; transition: 0.4s; margin-bottom: 1rem;}
 .grid__content__item::before{content: '';  width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: linear-gradient(90deg, var(--rosso-scuro), transparent);  z-index: 6;;}
 .grid__content__item img{position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;  z-index: 5; transition: 0.4s;}
 .grid__content__item:hover img{transform: scale(1.2);}
-.grid__content__item--hidden{opacity: 0; max-height: 0;}
+.grid__content__item--hidden{opacity: 0; margin-bottom: 0; transform: scale(0); height: 0; visibility: hidden;}
 
 .grid__content__item__text{position: absolute; z-index: 10; color: white; bottom: 0; left: 5%; text-transform: capitalize;}
 .grid__content__item__text h4{text-transform: uppercase; margin-bottom: 10px; font-family: 'Kanit', sans-serif;}
@@ -208,7 +208,7 @@
 @media (max-width: 769px) {
 	.grid__content__item__text h4{font-size: 0.7rem;}
 	.grid__content__item__text p{font-size: 0.7rem;}
-	.grid__sidebar__filter li{ font-size: 0.9rem;}
+	.grid__sidebar__filter li{ font-size: 0.9rem; margin: 0.9rem 0; }
 	.grid{padding: 2rem 5%; }
 
 }
