@@ -49,13 +49,11 @@ document.querySelectorAll('.bubbly-button').forEach(anchor => {
 document.querySelectorAll('.navigation ul li a').forEach(anchor => {
 	anchor.addEventListener('click', function (e) {
 		e.preventDefault();
+		navbar.classList.toggle('navbar--visible')
 
 		setTimeout( (e) => {
-			navbar.classList.toggle('navbar--visible')
-			document.querySelector(this.getAttribute('href')).scrollIntoView({
-				behavior: 'smooth'
-			});
-		}, 1000)
+			window.location.replace(this.getAttribute('href'));
+		}, 600)
 
 	});
 });
