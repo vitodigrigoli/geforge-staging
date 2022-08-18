@@ -976,6 +976,22 @@
 <script src="js/script.js"></script>
 <script src="js/vito.js"></script>
 
+<script>
+	window.addEventListener( 'scroll', () => {
+
+		scroll_animation.classList.remove("scroll--visible")
+
+		// scroll micro-interaction
+		if(timer !== null) {
+			clearTimeout(timer);
+		}
+
+		timer = setTimeout( () => {
+			scroll_animation.classList.add("scroll--visible")
+		}, 2000);
+	})
+
+</script>
 
 </body>
 </html>

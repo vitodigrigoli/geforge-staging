@@ -6,17 +6,6 @@ let last_scroll_top = 0;
 
 //makes the animation visible when the user does not scroll for at least 3 seconds
 window.addEventListener('scroll', function() {
-	scroll_animation.classList.remove("scroll--visible")
-
-	// scroll micro-interaction
-	if(timer !== null) {
-		clearTimeout(timer);
-
-	}
-
-	timer = setTimeout(function() {
-		scroll_animation.classList.add("scroll--visible")
-	}, 2000);
 
 
  // display logo at upscroll

@@ -185,14 +185,14 @@
 .grid__sidebar__cta a{color: var(--text-color); text-decoration: none;}
 .grid__sidebar__cta a{color: var(--text-color); text-decoration: none;}
 
-.grid__sidebar__filter li{ margin: 0.4rem 0; cursor: pointer; transition: 0.4s; transform-origin: left;  font-size: 0.8rem;}
+.grid__sidebar__filter li{ margin: 0.4rem 0; cursor: pointer; transition: 0.2s; transform-origin: left;  font-size: 0.8rem;}
 .grid__sidebar__filter li:hover{transform: scale(1.01); font-weight: bold;}
 .grid__sidebar__filter h3{text-transform: uppercase;}
 
 
 .grid__content{border:1px solid green; width: 55%; display: flex; flex-direction: column;}
 
-.grid__content__item{width: 100%; aspect-ratio: 16 / 9; border: 1px solid red; position: relative; overflow: hidden; opacity: 1; transition: 0.4s; margin-bottom: 1rem;}
+.grid__content__item{width: 100%; aspect-ratio: 16 / 9; border: 1px solid red; position: relative; overflow: hidden; opacity: 1; transition: 1s; margin-bottom: 1rem; filter: grayscale(1);}
 .grid__content__item::before{content: '';  width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: linear-gradient(90deg, var(--rosso-scuro), transparent);  z-index: 6;;}
 .grid__content__item img{position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;  z-index: 5; transition: 0.4s;}
 .grid__content__item:hover img{transform: scale(1.2);}
@@ -201,18 +201,75 @@
 .grid__content__item__text{position: absolute; z-index: 10; color: white; bottom: 0; left: 5%; text-transform: capitalize;}
 .grid__content__item__text h4{text-transform: uppercase; margin-bottom: 10px; font-family: 'Kanit', sans-serif;}
 
+.grid__sidebar__button{border: 1px solid violet; }
+
+	
+.grid__sidebar__button{display: none;}
+
+.grid__content__item--in-view{ opacity: 1; filter: none;}
+
+
+
+
+
+
+
 
 
 
 
 @media (max-width: 769px) {
+	.grid{padding: 2rem 5%; }
 	.grid__content__item__text h4{font-size: 0.7rem;}
 	.grid__content__item__text p{font-size: 0.7rem;}
 	.grid__sidebar__filter li{ font-size: 0.9rem; margin: 0.9rem 0; }
-	.grid{padding: 2rem 5%; }
-
 }
 
+
+@media (max-width: 500px) {
+	.grid{padding: 2rem 0; }
+	.grid__content{width: 100%; }
+	.grid__content__item{ width: 100%;}
+	.grid{display: block; padding: 0;} 
+
+	.grid__sidebar{ border: 1px solid green; width: 100%; z-index: 20;  top: 0; flex-direction: row; justify-content: space-between; align-items: center;}
+	.grid__sidebar__filter__list{max-height: 0; overflow: hidden; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82);  }
+
+	.grid__sidebar__cta{display: none;}
+
+	.grid__sidebar__filter__header{padding: 0 5%; backdrop-filter: blur(10px); background-color: rgba(255, 255, 255,0.7); display: flex; justify-content: space-between; width: 100%; border: 1px solid red; align-items: center; height: 80px;}
+	
+	.grid__sidebar__button{cursor: pointer; display: block;}
+	.grid__sidebar__button i{border: 1px solid black; font-size: 1.5rem;}
+
+	.grid__sidebar__filter h3 {margin-bottom: 0; border: 1px solid red; display: block;}
+
+	.grid__sidebar__filter{ width: 100%;}
+
+	.grid__sidebar__filter__list--open{max-height: 2000px;}
+
+	.grid__sidebar__filter__list{padding: 0 5%; height: calc(100vh - 80px); backdrop-filter: blur(10px); background-color: rgba(255, 255, 255,0.7)}
+	.grid__sidebar__filter li{opacity: 0; transition: 0.65s; font-size: 1.2rem;}
+	.grid__sidebar__filter__list--open li {opacity: 1;}
+
+	.grid__sidebar__filter li:nth-child(1){transition-delay: 50ms;}
+	.grid__sidebar__filter li:nth-child(2){transition-delay: 100ms;}
+	.grid__sidebar__filter li:nth-child(3){transition-delay: 150ms;}
+	.grid__sidebar__filter li:nth-child(4){transition-delay: 200ms;}
+	.grid__sidebar__filter li:nth-child(5){transition-delay: 250ms;}
+	.grid__sidebar__filter li:nth-child(6){transition-delay: 300ms;}
+	.grid__sidebar__filter li:nth-child(7){transition-delay: 350ms;}
+	.grid__sidebar__filter li:nth-child(8){transition-delay: 400ms;}
+	.grid__sidebar__filter li:nth-child(9){transition-delay: 450ms;}
+	.grid__sidebar__filter li:nth-child(10){transition-delay: 500ms;}
+	.grid__sidebar__filter li:nth-child(11){transition-delay: 550ms;}
+	.grid__sidebar__filter li:nth-child(12){transition-delay: 600ms;}
+	.grid__sidebar__filter li:nth-child(13){transition-delay: 650ms;}
+
+
+	.grid__content__item__text h4{font-size: 1.2rem;}
+	.grid__content__item__text p{font-size: 1rem;}
+}
 
 
 /* Animation

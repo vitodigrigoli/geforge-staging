@@ -90,7 +90,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="css/vito.css">
 
-
+	<script src="https://kit.fontawesome.com/3352ada0d1.js" crossorigin="anonymous"></script>
 	<!--script type="text/javascript">
 			var _iub = _iub || [];
 			_iub.csConfiguration = {"consentOnScroll":false,"perPurposeConsent":true,"whitelabel":false,"lang":"it","siteId":1771996,"cookiePolicyId":42165774, "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"position":"float-top-center" }};
@@ -100,10 +100,7 @@
 
 </head>
 <body class="overflow-unset portfolio">
-	<div class="scroll">
-		<p>Scroll</p>
-		<div class="scroll__pointer"></div>
-	</div>
+	
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZJ8VZ8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -156,8 +153,16 @@
 		<div class="grid__sidebar" data-scroll data-scroll-sticky data-scroll-target="#fixed">
 
 			<div class="grid__sidebar__filter">
-				<h3>Filtra per</h3>
-				<ul>
+
+				<div class="grid__sidebar__filter__header">
+					<h3>Filtra per</h3>
+
+					<div class="grid__sidebar__button" onclick="toggleList()">
+						<i class="fa-solid fa-filter"></i>
+					</div>
+				</div>
+
+				<ul class="grid__sidebar__filter__list">
 					<li onclick="filterBy('all')">All</li>
 					<li onclick="filterBy('advertising')">Advertising</li>
 					<li onclick="filterBy('animation')">Animation & Motion Graphic</li>
@@ -178,6 +183,8 @@
 				<h4>Hai un'idea per un progetto?</h4>
 				<p><a href="./#contatti">Contattaci ora!</a></p>
 			</div>
+
+
 		</div>
 
 		<div class="grid__content" id="myData"></div>
@@ -211,6 +218,7 @@
 <!-- Components -->
 <script src="js/modal.min.js"></script>
 <script src="js/conversational-form.min.js"></script>
+<script src="js/in-view.min.js"></script>
 
 
 <!-- GEFORGE JS -->
@@ -229,11 +237,11 @@ function appendData(data) {
 
 	let link = document.createElement("a")
 	link.setAttribute('href', data[i].link)
-	link.setAttribute('target', '_blanck')
+	link.setAttribute('target', '_blank')
 
 	link.className = 'grid__content__item' + ' ' + data[i].category
 
-	link.setAttribute('data-scroll', '')
+	link.setAttribute('data-inview', '')
 	link.setAttribute('data-scroll-delay', '0.2')
 
 
@@ -272,6 +280,18 @@ fetch('works.json')
 	
     appendData(data);
 
+	inView.offset(150);
+
+	inView('[data-inview]')
+		.on('enter', el => {
+			el.classList.add('grid__content__item--in-view')
+			// console.log("it's here")
+		})
+		.on('exit', el => {
+			el.classList.remove('grid__content__item--in-view')
+			// console.log("it's gone")
+		});
+
   })
   .catch(function (err) {
     console.log(err);
@@ -288,14 +308,12 @@ fetch('works.json')
 
 	const loader = document.getElementById('LoadingOverlay')
 	loader.classList.add('bye')
-	
-
 	});
-
-	
 
 
 	const filterBy = (category) => {
+
+		toggleList()
 		
 		const grid_items = Array.from( document.querySelectorAll('.grid__content__item') )
 
@@ -323,6 +341,23 @@ fetch('works.json')
 		document.getElementById('myData').scrollIntoView();
 	}
 
+
+	const toggleList = () =>{
+		const list = document.getElementsByClassName('grid__sidebar__filter__list')[0]
+
+		list.classList.toggle("grid__sidebar__filter__list--open")
+	}
+
+
+
+</script>
+
+<script>
+/*!
+ * in-view 0.6.1 - Get notified when a DOM element enters or exits the viewport.
+ * Copyright (c) 2016 Cam Wiegert <cam@camwiegert.com> - https://camwiegert.github.io/in-view
+ * License: MIT
+ */
 
 </script>
 
