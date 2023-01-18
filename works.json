@@ -1,62 +1,138 @@
 [
-    {
-        "name": "Black Earth Fashion",
-        "category": "filmaking",
-		"year": "2021",
-		"path_img": "./assets/img/lavori/work1.png",
-		"link": "https://www.advicenology.it"
-    },
+
 	{
-        "name": "Black Earth Fashion",
-        "category": "filmaking",
-		"year": "2021",
-		"path_img": "./assets/img/lavori/work1.png",
-		"link": "https://www.advicenology.it"
-    },
-	{
-        "name": "Black Earth Fashion",
-        "category": "branding",
-		"year": "2021",
-		"path_img": "./assets/img/lavori/work1.png",
-		"link": "https://www.advicenology.it"
+        "name": "Madagascar - Reportage",
+        "category": "photography",
+		"year": "2018",
+		"path_img": "./assets/pdf/cover/madagascar.jpg",
+		"link": "./assets/pdf/madagascar.pdf"
 
     },
 	{
-        "name": "Black Earth Fashion",
-        "category": "filmaking",
-		"year": "2021",
-		"path_img": "./assets/img/lavori/work1.png",
-		"link": "https://www.advicenology.it"
-    },
-	{
-        "name": "Black Earth Fashion",
-        "category": "filmaking",
-		"year": "2021",
-		"path_img": "./assets/img/lavori/work1.png",
-		"link": "https://www.advicenology.it"
-    },
-	{
-        "name": "Black Earth Fashion",
-        "category": "branding",
-		"year": "2021",
-		"path_img": "./assets/img/lavori/work1.png",
-		"link": "https://www.advicenology.it"
+        "name": "Addolcitore acqua per caldaia - Articoli SEO Oriented",
+        "category": "copywriting",
+		"year": "2022",
+		"path_img": "./assets/pdf/cover/Addolcitore-acqua-per-caldaia---Articoli-SEO-Oriented.jpg",
+		"link": "https://www.tatano.com/it/blog/elementi-di-impiantistica/installare-un-addolcitore-acqua-caldaia-quando-e-necessario-e-cosa"
 
     },
 	{
-        "name": "Black Earth Fashion",
+        "name": "Amadeus Istanbul with Travizeo - Event Highlights",
         "category": "filmaking",
-		"year": "2021",
-		"path_img": "./assets/img/lavori/work1.png",
-		"link": "https://www.advicenology.it"
+		"year": "2019",
+		"path_img": "./assets/pdf/cover/Amadeus-Istanbul-with-Travizeo---Event-Highlights.jpg",
+		"link": "https://artismore.it/myproject/amadeus"
+
     },
 	{
-        "name": "Black Earth Fashion",
-        "category": "filmaking",
+        "name": "Catalogo Narcisi Legno Infissi",
+        "category": "graphic",
 		"year": "2021",
-		"path_img": "./assets/img/lavori/work1.png",
-		"link": "https://www.advicenology.it"
+		"path_img": "./assets/pdf/cover/Catalogo-Narcisi-Legno-Infissi---Impaginazione.jpg",
+		"link": "https://www.behance.net/gallery/125953021/Narcisi_Product-Catalogue-2021"
+
+    },
+	{
+        "name": "CG Couture Syracuse with Studio Mooz - TV Advert",
+        "category": "filmaking",
+		"year": "2022",
+		"path_img": "./assets/pdf/cover/CG-Couture-Syracuse-with-Studio-Mooz---TV-Advert.jpg",
+		"link": "https://artismore.it/myproject/cgcouture/"
+
+    },
+	{
+        "name": "Museo Colle San Vitale - Scrollytelling",
+        "category": "web-dev",
+		"year": "2021",
+		"path_img": "./assets/pdf/cover/Museo-Colle-San-Vitale---Scrollytelling.jpg",
+		"link": "https://collesanvitale.it/la-nostra-terra/"
+
+    },
+	{
+        "name": "Colle San Vitale - Testi per sito web",
+        "category": "copywriting",
+		"year": "2021",
+		"path_img": "./assets/pdf/cover/Colle-San-Vitale---Testi-per-sito-web.jpg",
+		"link": "https://collesanvitale.it/la-nostra-terra/"
+
+    },
+	{
+        "name": "GAA, Meet America with Travizeo - Short Docu Series",
+        "category": "filmaking",
+		"year": "2018",
+		"path_img": "./assets/pdf/cover/GAA,-Meet-America-with-Travizeo---Short-Docu-Series.jpg",
+		"link": "https://artismore.it/myproject/meetamerica/"
+
+    },
+	{
+        "name": "L’Arca Onlus - Web App",
+        "category": "web-dev",
+		"year": "2022",
+		"path_img": "./assets/pdf/cover/L’Arca-Onlus---Web-App.jpg",
+		"link": "https://www.arcacammarata.org"
+
+    },
+	{
+        "name": "Meta - Analisi di un rebranding che passerà alla storia",
+        "category": "copywriting",
+		"year": "2021",
+		"path_img": "./assets/pdf/cover/Meta---Analisi-di-un-rebranding-che-passerà-alla-storia.jpg",
+		"link": "https://www.linkedin.com/pulse/meta-unanalisi-di-un-rebranding-che-passer%C3%A0-alla-storia-scibetta/"
+
+    },{
+        "name": "MeToDo - Brand Identity",
+        "category": "branding",
+		"year": "2021",
+		"path_img": "./assets/pdf/cover/meToDo---Brand-Identity.jpg",
+		"link": "https://www.behance.net/gallery/127540431/Me-To-Do-%28Brand-Identity%29"
+
+    },
+	{
+        "name": "Colle San Vitale - Sito vetrina",
+        "category": "web-design",
+		"year": "2021",
+		"path_img": "./assets/pdf/cover/Colle-San-Vitale---Sito-vetrina.jpg",
+		"link": "https://collesanvitale.it/"
+
+    },
+	{
+        "name": "Settimana della Cultura - Short Promo",
+        "category": "filmaking",
+		"year": "2022",
+		"path_img": "./assets/pdf/cover/Settimana-della-Cultura---Short-Promo.jpg",
+		"link": "https://fb.watch/gjMwJ8ah5s/"
+
+    },
+	{
+        "name": "Settimana della Cultura - Sito vetrina",
+        "category": "web-design",
+		"year": "2022",
+		"path_img": "./assets/pdf/cover/Settimana-della-Cultura---Sito-vetrina.jpg",
+		"link": "https://settimanadellacultura.events/"
+
+    },
+	{
+        "name": "Settimana della Cultura - Visual Branding",
+        "category": "branding",
+		"year": "2022",
+		"path_img": "./assets/pdf/cover/Settimana-della-Cultura---Visual-Branding.jpg",
+		"link": "https://settimanadellacultura.events/"
+
+    },
+	{
+        "name": "Tatano Energie Rinnovabili - Sito corporate",
+        "category": "web-design",
+		"year": "2015",
+		"path_img": "./assets/pdf/cover/Tatano-Energie-Rinnovabili---Sito-corporate.jpg",
+		"link": "https://www.tatano.com/it"
+
+    },
+	{
+        "name": "Uno scotch doppio, con ghiaccio. Grazie. - Articolo di approfondimento",
+        "category": "copywriting",
+		"year": "2020",
+		"path_img": "./assets/pdf/cover/Uno-scotch-doppio,-con-ghiaccio.-Grazie.---Articolo-di-approfondimento.jpg",
+		"link": "https://medium.com/frequenza-critica/uno-scotch-doppio-con-ghiaccio-grazie-42cd1e656989"
+
     }
-
-
 ]
