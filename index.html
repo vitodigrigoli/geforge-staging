@@ -861,90 +861,14 @@
 
 
 	<!--    -    FOOTER    -     -->
-	<footer id="contatti" class="boxed" data-scrollcolor="#F07167">
-		<div class="wrapper p-large pB-none">
-			<h3 class="h1 text-center text-white">Contattaci</h3>
-			<!--Contact Form-->
-			<div id="cf-context" class="form" role="cf-context" cf-context>
-				<form cf-form id="form" action="https://getform.io/f/a7692e39-ddb2-44b1-a15c-b837066e352f" method="POST">
-					<!--Intro-->
-					<cf-robot-message cf-questions="Ciao! Mi chiamo Fabrizio e sono qui per aiutarti."></cf-robot-message>
-					<input cf-questions="Sei pronto per iniziare?" cf-label="Andiamo!" type="radio" name="start" value="sì">
-					<!--Nome-->
-					<input cf-questions="Ottimo, con chi ho il piacere di parlare?" type="text" name="name" value="" required></input>
-					<!--Premises-->
-					<cf-robot-message cf-questions="🥰 Piacere di conoscerti {name}."></cf-robot-message>
-					<fieldset required cf-questions="Come posso aiutarti?">
-						<select id="premises" name="premises">
-							<option>Consulenza</option>
-							<option>Richiesta di preventivo</option>
-							<option>Richiesta di iscrizione a GeForGe</option>
-							<option>Richiesta di collaborazione</option>
-							<option value="Other">Altro</option>
-						</select>
-					</fieldset>
-					<!--Other Premises-->
-					<textarea type="text" name="other-premises" cf-questions="Scrivi la tua richiesta!" cf-conditional-premises="^Other$"></textarea>
-					<!--Equipment-->
-					<fieldset required cf-questions="Figo! Preparo subito la tua {previous-answer}.&&Seleziona il tuo profilo.">
-						<select id="equipment" name="equipment">
-							<option>Azienda</option>
-							<option>Professionista</option>
-							<option>Studente</option>
-							<option value="Other">Vorrei specificarlo</option>
-						</select>
-					</fieldset>
-					<!--Other Equipment-->
-					<textarea rows="3" name="other-equipment" cf-questions="Scrivi..." cf-conditional-equipment="^Other$"></textarea>
-					<!--Services-->
-					<fieldset required>
-						<div cf-questions="A quali servizi sei interessato?" required>
-							<cf label><input type="checkbox" name="services[]" value="Sito web" />Sito web</cf>
-							<cf label><input type="checkbox" name="services[]" value="Graphic design" />Graphic design</cf>
-							<cf label><input type="checkbox" name="services[]" value="Marketing" />Marketing</cf>
-							<cf label><input type="checkbox" name="services[]" value="SEO" />SEO</cf>
-							<cf label><input type="checkbox" name="services[]" value="Copy & Content" />Copy & Content</cf>
-							<cf label><input type="checkbox" name="services[]" value="Branding" />Branding</cf>
-							<cf label><input type="checkbox" name="services[]" value="Motion & Video" />Motion & Video</cf>
-							<cf label><input type="checkbox" name="services[]" value="Photography" />Photography</cf>
-						</div>
-					</fieldset>
-					<!--Email-->
-					<fieldset>
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" required pattern=".+\@.+\..+" cf-error="E-mail non corretta" cf-questions="Ci siamo quasi {name}. Inserisci la tua email in modo da poterti contattare.">
-					</fieldset>
-					<!--Phone-->
-					<fieldset cf-questions="Preferisci essere contattato telefonicamente?">
-						<select id="phone" name="phone">
-							<option value="Sì">Sì</option>
-							<option>No</option>
-						</select>
-					</fieldset>
-					<!--OtherPhone-->
-					<input type="tel" name="sì-phone" required cf-questions="Ottimo, qual è il tuo numero?" pattern="[0-9]{9}" maxlength="15" cf-conditional-phone="^Sì$" />
-					<!-- Messaggio -->
-					<textarea type="text" name="message" cf-questions="Scrivi la tua richiesta"></textarea>
-					<!--Submit-->
-					<fieldset style="display: none;">
-						<label for="thats-all">Grazie per il tuo tempo {name}, questo è tutto. Secondo l'informativa sulla privacy, acconsenti al trattamento dei dati personali?</label>
-						<select cf-questions="Vuoi inviare la tua richiesta?" name="text-send" id="submit-form" class="form-control">
-							<option value="Invia adesso!">Sì, invia adesso.</option>
-						</select>
-					</fieldset>
-
-					<button type="submit">Invia</button>
-				</form>
-			</div>
-		</div>
-	</footer>
 	<div class="subfooter">
+		<div class="subfooter__text">
+			<span>GeForGe SRL - P.IVA 03060450842 - Via Madonna del Carmelo, 18 - S. Giovanni Gemini (AG)</span>
+		</div>
 		<div class="subfooter__policy">
 			<span><a href="https://www.iubenda.com/privacy-policy/42165774" target="_blank">Privacy</a> - <a href="https://www.iubenda.com/privacy-policy/42165774/cookie-policy" target="_blank">Cookie</a></span>
 		</div>
-		<div class="subfooter__text">
-			<span>GeForGe - Genius for Genius</span>
-		</div>
+	
 	</div>
 
 

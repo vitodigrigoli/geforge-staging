@@ -156,10 +156,11 @@
 .hero__media{position: absolute; top: 0; left: 0; width: 100vw;  height: 100%; overflow: hidden;}
 .hero__media video{ object-fit: cover; width: 100vw;  height: 100%; overflow-x: hidden;}
 
-.hero__text{ padding-left: 40px; position: relative; width: 40%; color: white;}
+.hero__text{ padding-left: 40px; position: relative; width: 35%; color: white;}
 
 .hero__text h1{ font-size: 16px;text-transform: uppercase; color: var(--arancio); margin-bottom: 10px;}
 .hero__text h2{margin-bottom: 1rem;}
+.hero__text p{font-size: 18px;}
 
 @media (max-width: 1024px) {
 	.hero__text{width: 50%;}
@@ -176,9 +177,9 @@
 --------------------------------------------------------------------------*/
 .portfolio{background-color: var(--grigio-panna);}
 
-.grid{display: flex; align-items: flex-start; justify-content: space-between; border: 1px solid red; max-width: 2000px; margin: 0 auto; padding: 2rem 10%; }
+.grid{display: flex; align-items: flex-start; justify-content: space-between; max-width: 2000px; margin: 0 auto; padding: 2rem 10%; }
 
-.grid__sidebar{  border: 1px solid blue;  display: flex; flex-direction: column; width: 40%; 	position: -webkit-sticky; position: sticky; top: 2rem; }
+.grid__sidebar{  display: flex; flex-direction: column; width: 40%; 	position: -webkit-sticky; position: sticky; top: 2rem; }
 
 .grid__sidebar__cta{ margin-top: 1rem;}
 .grid__sidebar__cta h4{margin-bottom: 10px;}
@@ -190,9 +191,9 @@
 .grid__sidebar__filter h3{text-transform: uppercase;}
 
 
-.grid__content{border:1px solid green; width: 55%; display: flex; flex-direction: column;}
+.grid__content{ width: 55%; display: flex; flex-direction: column;}
 
-.grid__content__item{width: 100%; aspect-ratio: 16 / 9; border: 1px solid red; position: relative; overflow: hidden; opacity: 1; transition: 1s; margin-bottom: 1rem; filter: grayscale(1);}
+.grid__content__item{width: 100%; aspect-ratio: 16 / 9;position: relative; overflow: hidden; opacity: 1; transition: 1s; margin-bottom: 1rem; filter: grayscale(1);}
 /*.grid__content__item::before{content: '';  width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: linear-gradient(90deg, var(--rosso-scuro), transparent);  z-index: 6;;}*/
 .grid__content__item img{position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;  z-index: 5; transition: 0.4s;}
 .grid__content__item:hover img{transform: scale(1.2);}
@@ -201,7 +202,7 @@
 .grid__content__item__text{position: absolute; z-index: 10; color: white; bottom: 0; left: 5%; text-transform: capitalize;}
 .grid__content__item__text h4{text-transform: uppercase; margin-bottom: 10px; font-family: 'Kanit', sans-serif;}
 
-.grid__sidebar__button{border: 1px solid violet; }
+.grid__sidebar__button{}
 
 	
 .grid__sidebar__button{display: none;}
