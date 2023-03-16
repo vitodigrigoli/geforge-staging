@@ -49,8 +49,10 @@
 
 .navigation {font-family: 'Kanit', sans-serif; display: flex; justify-content: center; align-items: center; height: 100%; overflow: hidden; }
 .navigation ul {position: relative;}
+
 .navigation ul li {	text-align: center;	list-style: none; opacity: 0; transition: 0.5s cubic-bezier(0.63, 0.03, 0.24, 0.82); margin: 2vh 0; }
 .navigation ul li a {color: white; width: 100%; text-align: center !important; text-decoration: none; font-size: 1.8em; padding: 1rem 2rem; display: inline-block; font-weight: 700; transition: 0.5s; border-radius: 1rem;}
+
 .navigation ul:hover li a {color: #0002;}
 .navigation ul li:hover a {color: #000;background: #fff;}
 .navigation ul li a:before {
@@ -102,6 +104,7 @@
 .logo--hidden{ opacity: 0; transform: translateY(200%) rotate(0); visibility: hidden }
 
 
+
 .logo__wp{z-index:3000;display:flex;justify-content:center;align-items:center;text-decoration:none;mix-blend-mode: difference;position:fixed;width:70px;height:70px;bottom:25px;right:25px;border-top: 1px solid rgba(255, 255, 255, 0.2);border-left: 1px solid rgba(255, 255, 255, 0.2);font-size: 50px;border-radius:50%;color: rgb(255, 255, 255);box-shadow: 2px 5px 10px rgb(0 0 0 / 50%);backdrop-filter: blur(10px);cursor:pointer; }
 .logo__wp i {
     display: block;
@@ -109,7 +112,6 @@
 }
 
 .logo__wp:hover{background-color:white;color:#25D366;mix-blend-mode:normal;}
-
 
 
 #introHome{background: white;}
@@ -145,8 +147,6 @@
 
 /* Subfooter
 --------------------------------------------------------------------------*/
-
-
 .subfooter{display: flex;flex-direction: column; justify-content:space-between; padding: 30px; background-color: var(--blu-scuro); color: white; font-size: 15px; letter-spacing: 2px; position: relative; z-index: 3100;align-items: center;}
 .subfooter__policy{width:100%;display:flex;justify-content: center;}
 .subfooter__policy a,.subfooter__social a{ text-decoration: none; color: white;}
@@ -160,6 +160,7 @@
 	.subfooter__policy{width: 100%;  margin-bottom: 50px;}
 	.subfooter__text{width: 100%; margin-bottom:50px;}
 	.subfooter__social{width:100%;display:flex;justify-content: space-around;margin-bottom:50px;}
+
 	.subfooter__policy,
 	.subfooter__text span{ text-align: center; display: block}
 }
@@ -200,8 +201,10 @@
 
 .grid__sidebar__cta{ margin-top: 1rem;}
 .grid__sidebar__cta h4{margin-bottom: 10px;}
+
 .grid__sidebar__cta a{color: var(--text-color); text-decoration: none; cursor: pointer; transition: 0.2s;}
 .grid__sidebar__cta a:hover{transform: scale(1.01); font-weight: bold;}
+
 
 .grid__sidebar__filter li{ margin: 0.4rem 0; cursor: pointer; transition: 0.2s; transform-origin: left;  font-size: 0.8rem;}
 .grid__sidebar__filter li:hover{transform: scale(1.01); font-weight: bold;}
@@ -267,6 +270,7 @@
 	.grid__sidebar__filter__list--open{max-height: 2000px;}
 
 	.grid__sidebar__filter__list{padding: 0 5%; backdrop-filter: blur(10px); background-color: rgba(255, 255, 255,0.7)}
+
 	.grid__sidebar__filter li{opacity: 0; transition: 0.65s; font-size: 1.2rem;}
 	.grid__sidebar__filter__list--open li {opacity: 1;}
 
@@ -340,6 +344,7 @@ img{width:100%; height: auto;}
 
 
 
+
 /* Social Wall 
 --------------------------------------------------------------------------*/
 .social.container{max-width: 2000px; margin: 0 auto; padding: 2rem 10%;}
@@ -398,3 +403,4 @@ img{width:100%; height: auto;}
 
 
 /**/
+

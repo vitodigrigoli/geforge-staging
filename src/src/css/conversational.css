@@ -1,0 +1,66 @@
+/*/ Contact Form /*/
+form {
+    visibility: hidden;
+}
+
+form, #conversational-form {
+    margin: 0;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin:auto;
+    max-height:800px;
+}
+.box-shadow{
+    border: 1px solid #ddd;
+    box-shadow: 0 0 40px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Responsive */ 
+    @media all and (min-width: 800px) {
+    form, #conversational-form {
+      height: 60vh;
+      width: 60vw;
+    }
+    .conversational-form .conversational-form-inner{
+      padding:0px 80px !important;
+    }
+  }
+
+
+#form {
+    height: 0px;
+    overflow: hidden;
+}
+
+.form .conversational-form {
+    font-style: normal;
+    max-width:900px;
+    border-radius: 14px;
+}
+
+      cf-input{
+        margin-top:30px !important;
+      }
+      .form .conversational-form cf-chat-response.robot thumb {
+          background-size: 183%;
+          background-repeat: no-repeat;
+      }
+
+      #cf-context{
+        transition:300ms all;
+        height: 70vh;
+      }
+      .black-bg{
+        background:black;
+      }
+      
+      cf-chat-response.show{
+        margin-bottom:20px;
+      }
+      
+      .conversational-form .conversational-form-inner{
+        padding:0px 80px;
+      }
