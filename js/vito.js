@@ -1,22 +1,12 @@
 const scroll_animation = document.getElementsByClassName("scroll")[0]
-const logo = document.getElementsByClassName("logo")[0]
+const toggle = document.getElementsByClassName("menu__toggle")[0]
+const bars = document.getElementsByClassName("menu__toggle__bars")[0]
 const navbar = document.getElementsByClassName('navbar')[0]
 let timer = null;
 let last_scroll_top = 0;
 
 //makes the animation visible when the user does not scroll for at least 3 seconds
 window.addEventListener('scroll', function() {
-	scroll_animation.classList.remove("scroll--visible")
-
-	// scroll micro-interaction
-	if(timer !== null) {
-		clearTimeout(timer);
-
-	}
-
-	timer = setTimeout(function() {
-		scroll_animation.classList.add("scroll--visible")
-	}, 2000);
 
 
  // display logo at upscroll
@@ -37,9 +27,7 @@ document.querySelectorAll('.bubbly-button').forEach(anchor => {
 	anchor.addEventListener('click', function (e) {
 		e.preventDefault();
 		setTimeout( (e) => {
-			document.querySelector(this.getAttribute('href')).scrollIntoView({
-				behavior: 'smooth'
-			});
+			window.location.replace(this.getAttribute('href'))
 		}, 400)
 
 	});
@@ -49,20 +37,18 @@ document.querySelectorAll('.bubbly-button').forEach(anchor => {
 document.querySelectorAll('.navigation ul li a').forEach(anchor => {
 	anchor.addEventListener('click', function (e) {
 		e.preventDefault();
+		navbar.classList.toggle('navbar--visible')
 
 		setTimeout( (e) => {
-			navbar.classList.toggle('navbar--visible')
-			document.querySelector(this.getAttribute('href')).scrollIntoView({
-				behavior: 'smooth'
-			});
-		}, 1000)
+			window.location.replace(this.getAttribute('href'));
+		}, 600)
 
 	});
 });
 
 
 
-logo.addEventListener('click', () => {
+toggle.addEventListener('click', () => {
+	bars.classList.toggle('menu__toggle__bars--active')
 	navbar.classList.toggle('navbar--visible')
-	logo.classList.toggle('logo--animate')
 })

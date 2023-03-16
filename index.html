@@ -26,8 +26,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#131C25" />
+
+	<!-- HTML Meta Tags -->
+	<title>GeForGe - Lasciati forgiare da noi</title>
+	<meta name="description" content="Siamo una community di giovani professionisti che condividono idee, esperienze, formazione, capacità e voglia di mettersi in gioco.">
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://geforge.it/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="GeForGe - Lasciati forgiare da noi">
+	<meta property="og:description" content="Siamo una community di giovani professionisti che condividono idee, esperienze, formazione, capacità e voglia di mettersi in gioco.">
+	<meta property="og:image" content="https://res.cloudinary.com/damqzwfm5/image/upload/c_crop,g_west,h_630,w_1200/v1634030478/geforge/images/Screenshot_1_c90zlq.png">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="geforge.it">
+	<meta property="twitter:url" content="https://geforge.it/">
+	<meta name="twitter:title" content="GeForGe - Lasciati forgiare da noi">
+	<meta name="twitter:description" content="Siamo una community di giovani professionisti che condividono idee, esperienze, formazione, capacità e voglia di mettersi in gioco.">
+	<meta name="twitter:image" content="https://res.cloudinary.com/damqzwfm5/image/upload/c_crop,g_west,h_630,w_1200/v1634030478/geforge/images/Screenshot_1_c90zlq.png">
+
+	<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
 	<link rel="icon" sizes="192x192" href="assets/img/logo-scuro-1.png">
-	<title>GeForGe - Lasciati forgiare da noi.</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
 	<!-- Google Tag Manager -->
@@ -66,15 +87,17 @@
 	<link href="css/modal.min.css" rel="stylesheet">
 
 	<link href="css/conversational.min.css" rel="stylesheet">
-	<link href="css/flickity.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="css/vito.css">
 
+<!--
 	<script type="text/javascript">
 			var _iub = _iub || [];
 			_iub.csConfiguration = {"consentOnScroll":false,"perPurposeConsent":true,"whitelabel":false,"lang":"it","siteId":1771996,"cookiePolicyId":42165774, "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"position":"float-top-center" }};
 	</script>
 	<script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 
+-->
 </head>
 <body>
 
@@ -90,18 +113,18 @@
 <!--    -    PAGE WRAPPER    -     -->
 <div class="page-wrapper">
 
-	<!-- HEADER  -->
-	<div class="logo">
-		<img class="svg" src="assets/img/logo.png">
-	</div>
+	<a class="logo__wp" href="https://wa.me/+393803476287" target="_blank">
+		<i class="fa-brands fa-whatsapp" ></i>
+	</a>
+
 		<nav class="navbar">
 			<div class="navigation">
 				<ul>
-					<li><a href="#introHome" data-text="Scopri GeForGe">Scopri GeForGe</a></li>
-					<li><a href="#servizi-fiamma" data-text="Consulting">Consulting</a></li>
-					<li><a href="#rete" data-text="Diventa Geforger">Diventa un Geforger</a></li>
-					<li><a href="#formazione" data-text="Digital College">Digital College</a></li>
-					<li><a href="#contatti" data-text="Contattaci">Contattaci</a></li>
+					<li><a href="/index.html" data-text="Home">Home</a></li>
+					<li><a href="https:\\geforgeconsulting.it" data-text="Consulting">Consulting</a></li>
+					<li><a href="#formazione" data-text="College">College</a></li>
+					<li><a href="portfolio.html" data-text="Portfolio">Portfolio</a></li>
+					<li><a href="https://wa.me/+393803476287"   data-text="Contattaci">Contattaci</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -110,6 +133,36 @@
 		<p>Scroll</p>
 		<div class="scroll__pointer"></div>
 	</div>
+
+	<nav class="menu">
+
+		<div class="container-2">
+			
+			<div class="menu__logo menu__logo--desktop">
+				<img src="assets/img/logo.png" alt=" logo">
+			</div>
+
+			<div class="menu__logo--mobile">
+				<img src="./logo.png" alt="logo">
+			</div>
+			<ul class="menu__list">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="https:\\geforgeconsulting.it">Consulting</a></li>
+				<li><a href="#formazione">College</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="https://wa.me/+393803476287">Contattaci</a></li>
+			</ul>
+
+			<div class="menu__toggle">
+				<div class="menu__toggle__text">Menu</div>
+				<div class="menu__toggle__bars">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+
+	</nav>
 
 
 	<!--    -    INTRO    -     -->
@@ -745,7 +798,7 @@
 
 					<!-- Carousel :: CTA -->
 					<div class="section-cta text-center">
-						<a href="#contatti" class="bubbly-button">Contattaci</a>
+						<a href="/portfolio.html" class="bubbly-button">Scopri i nostri lavori</a>
 					</div>
 				</div>
 
@@ -794,7 +847,7 @@
 									<div class="cover">
 										<div class="round">
 											<h1>
-												<a href="https://www.facebook.com/groups/geforge/">Unisciti alla rete</a>
+												<a href="https://coda.io/form/Candidatura-per-GeForGe_dXfWqkRSv6L" target="_blank">Candidati ora</a>
 											</h1>
 										</div>
 									</div>
@@ -837,83 +890,21 @@
 
 
 	<!--    -    FOOTER    -     -->
-	<footer id="contatti" class="boxed" data-scrollcolor="#F07167">
-		<div class="wrapper p-large pB-none">
-			<h3 class="h1 text-center text-white">Contattaci</h3>
-			<!--Contact Form-->
-			<div id="cf-context" class="form" role="cf-context" cf-context>
-				<form cf-form id="form" action="https://getform.io/f/a7692e39-ddb2-44b1-a15c-b837066e352f" method="POST">
-					<!--Intro-->
-					<cf-robot-message cf-questions="Ciao! Mi chiamo Fabrizio e sono qui per aiutarti."></cf-robot-message>
-					<input cf-questions="Sei pronto per iniziare?" cf-label="Andiamo!" type="radio" name="start" value="sì">
-					<!--Nome-->
-					<input cf-questions="Ottimo, con chi ho il piacere di parlare?" type="text" name="name" value="" required></input>
-					<!--Premises-->
-					<cf-robot-message cf-questions="🥰 Piacere di conoscerti {name}."></cf-robot-message>
-					<fieldset required cf-questions="Come posso aiutarti?">
-						<select id="premises" name="premises">
-							<option>Consulenza</option>
-							<option>Richiesta di preventivo</option>
-							<option>Richiesta di iscrizione a GeForGe</option>
-							<option>Richiesta di collaborazione</option>
-							<option value="Other">Altro</option>
-						</select>
-					</fieldset>
-					<!--Other Premises-->
-					<textarea type="text" name="other-premises" cf-questions="Scrivi la tua richiesta!" cf-conditional-premises="^Other$"></textarea>
-					<!--Equipment-->
-					<fieldset required cf-questions="Figo! Preparo subito la tua {previous-answer}.&&Seleziona il tuo profilo.">
-						<select id="equipment" name="equipment">
-							<option>Azienda</option>
-							<option>Professionista</option>
-							<option>Studente</option>
-							<option value="Other">Vorrei specificarlo</option>
-						</select>
-					</fieldset>
-					<!--Other Equipment-->
-					<textarea rows="3" name="other-equipment" cf-questions="Scrivi..." cf-conditional-equipment="^Other$"></textarea>
-					<!--Services-->
-					<fieldset required>
-						<div cf-questions="A quali servizi sei interessato?" required>
-							<cf label><input type="checkbox" name="services[]" value="Sito web" />Sito web</cf>
-							<cf label><input type="checkbox" name="services[]" value="Graphic design" />Graphic design</cf>
-							<cf label><input type="checkbox" name="services[]" value="Marketing" />Marketing</cf>
-							<cf label><input type="checkbox" name="services[]" value="SEO" />SEO</cf>
-							<cf label><input type="checkbox" name="services[]" value="Copy & Content" />Copy & Content</cf>
-							<cf label><input type="checkbox" name="services[]" value="Branding" />Branding</cf>
-							<cf label><input type="checkbox" name="services[]" value="Motion & Video" />Motion & Video</cf>
-							<cf label><input type="checkbox" name="services[]" value="Photography" />Photography</cf>
-						</div>
-					</fieldset>
-					<!--Email-->
-					<fieldset>
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" required pattern=".+\@.+\..+" cf-error="E-mail non corretta" cf-questions="Ci siamo quasi {name}. Inserisci la tua email in modo da poterti contattare.">
-					</fieldset>
-					<!--Phone-->
-					<fieldset cf-questions="Preferisci essere contattato telefonicamente?">
-						<select id="phone" name="phone">
-							<option value="Sì">Sì</option>
-							<option>No</option>
-						</select>
-					</fieldset>
-					<!--OtherPhone-->
-					<input type="tel" name="sì-phone" required cf-questions="Ottimo, qual è il tuo numero?" pattern="[0-9]{9}" maxlength="15" cf-conditional-phone="^Sì$" />
-					<!-- Messaggio -->
-					<textarea type="text" name="message" cf-questions="Scrivi la tua richiesta"></textarea>
-					<!--Submit-->
-					<fieldset style="display: none;">
-						<label for="thats-all">Grazie per il tuo tempo {name}, questo è tutto. Vuoi inviare la tua richiesta?</label>
-						<select cf-questions="Vuoi inviare la tua richiesta?" name="text-send" id="submit-form" class="form-control">
-							<option value="Invia adesso!">Sì, invia adesso.</option>
-						</select>
-					</fieldset>
-
-					<button type="submit">Invia</button>
-				</form>
-			</div>
+	<div class="subfooter">
+		<div class="subfooter__text">
+			<span>GeForGe SRLS - P.IVA 03060450842 - Via Madonna del Carmelo, 18 - S. Giovanni Gemini (AG)</span>
 		</div>
-	</footer>
+		<div class="subfooter__social">
+			<a href="https://www.facebook.com/groups/geforge/" class="fa-brands fa-facebook" target="_blank"></a>
+			<a href="https://www.instagram.com/ge.forge/" class="fa-brands fa-instagram" target="_blank"></a>
+			<a href="https://it.linkedin.com/company/geforge" class="fa-brands fa-linkedin" target="_blank"></a>
+		</div>
+		<div class="subfooter__policy">
+			<span><a href="https://www.iubenda.com/privacy-policy/42165774" target="_blank">Privacy</a> - <a href="https://www.iubenda.com/privacy-policy/42165774/cookie-policy" target="_blank">Cookie</a></span>
+		</div>
+		
+	
+	</div>
 
 
 
@@ -927,8 +918,10 @@
 <script src="js/gsap/gsap.min.js"></script>
 <script src="js/gsap/ScrollTrigger.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+<script src="https://kit.fontawesome.com/3352ada0d1.js" crossorigin="anonymous"></script>
+
+<script	src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="js/flickity-sync.min.js"></script>
 
 <!-- Components -->
@@ -937,9 +930,29 @@
 
 
 <!-- GEFORGE JS -->
+
+<script>
+
+</script>
 <script src="js/script.js"></script>
 <script src="js/vito.js"></script>
 
+<script>
+	window.addEventListener( 'scroll', () => {
+
+		scroll_animation.classList.remove("scroll--visible")
+
+		// scroll micro-interaction
+		if(timer !== null) {
+			clearTimeout(timer);
+		}
+
+		timer = setTimeout( () => {
+			scroll_animation.classList.add("scroll--visible")
+		}, 2000);
+	})
+
+</script>
 
 </body>
 </html>

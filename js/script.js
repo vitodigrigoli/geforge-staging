@@ -19,6 +19,11 @@ const consoleWelcome = `%c
       console.log(consoleWelcome, 'color: #fe8005; background:#131C25;');
 
 
+// Chrome Scroll Restoration
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
 
 /* Reset Video */
 changeVideo("video-0");
@@ -51,7 +56,7 @@ const tl = gsap.timeline({
     scrub: 1,
     maxScroll: 300,
     start: "top top",
-    end: smallMediaQuery.matches ? "+=5000" : "+=1500",
+    end: smallMediaQuery.matches ? "+=3000" : "+=3000",
     toggleActions: "play pause play reset",
   },
 });
@@ -286,6 +291,7 @@ $('form').on('submit', function(event) {
 
 
 window.onload = function() {
+  
   var flowCallback = function(dto, success, error) {
     console.log("dto....", dto, success, error);
     
@@ -387,6 +393,7 @@ $carousel.trigger('select');
 $nav.data('flickity').resize();
 
 function choseCenterSlide () {
+
 // 
 // calculate closest slide
 var distances = this.slides.map(slide => Math.abs(-slide.target - this.x));
@@ -410,7 +417,20 @@ cell.element.classList.add('is-closest');
 });
 // update state variable
 this.scrollSlideIndex = closestSlideIndex;
+
 }
+
+
+// ScrollTo Carousel Nav
+const yOffset = -10; 	
+$nav.on('change.flickity', function() {
+	window.scrollTo({
+		top: document.querySelector('.carousel-nav').getBoundingClientRect().top + window.pageYOffset + yOffset, 
+		behavior: 'smooth'
+	});
+});
+
+
 
 
 /* MODAL */
