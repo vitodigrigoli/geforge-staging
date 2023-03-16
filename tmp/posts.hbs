@@ -1,0 +1,44 @@
+<div class="section-featured{{#if feature_image}} is-featured-image{{else}} no-featured-image{{/if}}">
+	<div class="featured-wrap flex{{^if feature_image}}{{#is "home"}} wrap{{/is}}{{/if}}">
+		{{#is "home"}}
+		<article class="featured-content">
+			<span class="featured-label global-tag">{{>icons/site/star}} {{t "Featured"}}</span>
+			<h2><a href="{{url}}">{{title}}</a><span class="featured-dot"></span></h2>
+			{{else}}
+			<div class="featured-content">
+				<div class="tags-wrap">
+					{{#if featured}}
+					<span class="featured-label global-tag">{{>icons/site/star}} <span>{{t "Featured"}}</span></span>
+					{{/if}}
+					{{#if tags}}
+					{{#foreach tags separator=""}}
+					<a class="post-tag global-tag" href="{{url}}">{{name}}</a>
+					{{/foreach}}
+					{{/if}}
+				</div>
+				<h1 class="">{{title}}</h1>
+				{{/is}}
+				<div class="item-meta">
+					<span>{{t "by"}}</span>
+					{{#has author="count:2"}}
+					{{authors separator=" <span>&</span> "}}
+					{{else}}
+					{{authors}}
+					{{/has}}
+					<time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at timeago="true"}}</time>
+					{{^is "home"}}
+					<span class="reading-time">{{>icons/site/stopwatch}} {{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</span>
+					{{/is}}
+				</div>
+				{{#is "home"}}
+			</article>
+			{{else}}
+		</div>
+		{{/is}}
+	</div>
+	{{#if feature_image}}
+		<div class="featured-image" style="background-image: url({{feature_image}})">
+			{{^is "home"}}<img src="{{feature_image}}">{{/is}}
+		</div>
+	{{/if}}
+</div>
